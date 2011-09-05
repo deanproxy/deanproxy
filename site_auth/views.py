@@ -1,6 +1,6 @@
 from django.http import HttpResponse
 from django.shortcuts import redirect, render
-from auth.models import Admin
+from site_auth.models import Admin
 
 def index(request):
 	return render(request, 'auth/login.html')

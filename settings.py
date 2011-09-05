@@ -54,7 +54,7 @@ MEDIA_URL = ''
 
 # Absolute path to the directory static files should be collected to.
 # Don't put anything in this directory yourself; store your static files
-# in apps' "static/" subdirectories and in STATICFILES_DIRS.
+# in apdps' "static/" subdirectories and in STATICFILES_DIRS.
 # Example: "/home/media/media.lawrence.com/static/"
 STATIC_ROOT = '/Users/dean/Code/deanproxy/static/'
 
@@ -98,8 +98,8 @@ TEMPLATE_CONTEXT_PROCESSORS = (
 )
 
 MIDDLEWARE_CLASSES = (
-    'django.middleware.common.CommonMiddleware',
-    'django.contrib.sessions.middleware.SessionMiddleware',
+#    'django.middleware.common.CommonMiddleware',
+#    'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
 #    'django.contrib.auth.middleware.AuthenticationMiddleware',
 #    'django.contrib.messages.middleware.MessageMiddleware',
@@ -112,7 +112,7 @@ TEMPLATE_DIRS = ('/Users/dean/Code/Deanproxy/templates',)
 INSTALLED_APPS = (
 	'deanproxy.globaltags',
 	'deanproxy.blog',
-	'deanproxy.auth',
+	'deanproxy.site_auth',
 	'deanproxy.twitter',
 #    'django.contrib.auth',
 #    'django.contrib.contenttypes',

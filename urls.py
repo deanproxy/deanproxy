@@ -33,9 +33,9 @@ urlpatterns = patterns('',
 #	url(r'^about/$', 'deanproxy.blog.views.about'),
 #	url(r'^music/$', 'deanproxy.blog.views.music'),
 
-	url(r'^admin/$', 'deanproxy.auth.views.index'),
-	url(r'^admin/login/', 'deanproxy.auth.views.login'),
-	url(r'^admin/logout/', 'deanproxy.auth.views.logout'),
+	url(r'^admin/$', 'deanproxy.site_auth.views.index'),
+	url(r'^admin/login/', 'deanproxy.site_auth.views.login'),
+	url(r'^admin/logout/', 'deanproxy.site_auth.views.logout'),
 
 #	url(r'^contact/$', 'deanproxy.contact.views.index'),
 #	url(r'^contact/send/', 'deanproxy.contact.views.send'),

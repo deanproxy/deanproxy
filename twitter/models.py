@@ -5,5 +5,5 @@ class Tweet(models.Model):
 	text = models.CharField(max_length=140)
 
 class Twitter(models.Model):
-	last_updated = models.DateField(auto_now=True, auto_now_add=True, blank=True)
+	last_updated = models.DateTimeField(auto_now=True, auto_now_add=True, blank=True)
 

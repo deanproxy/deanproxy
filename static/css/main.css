@@ -265,6 +265,7 @@ nav ul li.search form input:focus {
 #footer {
 	clear: left;
 	width: 100%;
+	font-size: 12px;
 }
 #footer .copyright {
 	width: 950px;
