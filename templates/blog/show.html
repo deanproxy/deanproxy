@@ -1,0 +1,55 @@
+{% extends '_layouts/main.html' %}
+{% block head_extras %}
+	{% js 'jquery.scrollTo-1.4.2-min.js' %}
+	{% js 'jquery.editinplace.js' %}
+	{% js 'post.js' %}
+	{% css 'post.css' %}
+{% endblock %}
+
+{% block content %}
+	{% include 'blog/_post.html' %}
+
+	<h3>Comments</h3>
+	<div id="comments">
+		{% if comments.count > 0 %}
+			{% for comment in comments %}
+				<article id="comment-{{ comment.id }}">
+					<p {% if request.session.logged_in %}class="inPlaceEdit"{% endif %}>
+						{{ comment.message }}
+					</p>
+					<footer>
+						Posted by {{ comment.name }},
+						on {{ comment.created_at|date:'j M, Y' }}
+						{% if request.session.logged_in %}
+							| <a rel="delete" href="/blog/comments/delete/{{ comment.id }}">Delete</a>
+						{% endif %}
+					</footer>
+				</article>
+			{% endfor %}
+		{% else %}
+			No comments yet...
+		{% endif %}
+	</div>
+
+	<h3>Post a comment</h3>
+	<div class="commentForm">
+		<div id="newCommentErrors" class="errorsHeader">
+			The fields highlighted in red are required.
+		</div>
+		<form action="/blog/comments/create/" name="comment" method="post">
+			{% csrf_token %}
+			<input type="hidden" name="post" value="{{ post.id }}"/>
+			<ul>
+				<li>
+					<input type="text" name="name" value="Your name" class="required validName"/>
+				</li>
+				<li>
+					<textarea name="message" rows="10" cols="55" class="required"></textarea>
+				</li>
+				<li>
+					<button type="submit" id='postComment' class="primary">Post comment</button>
+				</li>
+			</ul>
+		</form>
+	</div>
+{% endblock %}

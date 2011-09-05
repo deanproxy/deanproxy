@@ -1,0 +1,13 @@
+- MAIN
+	- Create login
+    - Implement search
+    - Create code page linking to all projects
+    - Create about page
+    - Create contact page
+    - Create music page
+
+- POSTS
+	- Create admin interface to add new post
+	- Create admin interface to edit/delete posts when on that page
+	- Add ability to edit/update comments
+

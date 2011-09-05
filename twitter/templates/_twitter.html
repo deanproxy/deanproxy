@@ -1,0 +1,14 @@
+{% ifequal tweets|length 0 %}
+	There was an error getting tweets...
+{% else %}
+	<ul id="tweets">
+		{% for tweet in tweets %}
+			<li>
+				{{ tweet.text }}
+				<time datetime="{{ tweet.created_at|date:'j M' }}">
+					{{ tweet.created_at|date:'j M' }}
+				</time>
+			</li>
+		{% endfor %}
+	</ul>
+{% endifequal %}

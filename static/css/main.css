@@ -1,0 +1,317 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: Helvetica, "Times New Roman", sans-serif;
+	font-size: 16px;
+	background: url(/static/images/macTexture.png) repeat;
+	color: #444;
+}
+p {
+	margin: 10px 0 10px 0;
+}
+a {
+	color: #0078e1;
+	text-decoration: none;
+}
+a:hover {
+	color: #e16900;
+}
+a[rel=delete] {
+	color: #e10007;
+}
+h1, h2 {
+	font-family: Comfortaa, Helvetica, sans-serif;
+}
+h3 {
+	margin: 10px 0;
+}
+input, textarea {
+	padding: 4px;
+	color: #999;
+	border-radius: 5px;
+	font-size: 14px;
+	border: 1px solid #999;
+}
+input:focus, textarea:focus {
+	outline-width: 0;
+	box-shadow: 0 0 5px #999;
+	background-color: #fcfce4;
+	color: #555;
+}
+form ul {
+	list-style: none;
+}
+form ul li {
+	padding: 10px 0 10px 0;
+}
+form ul li:last-child {
+	text-align: right;
+}
+form ul li label {
+	display: block;
+}
+.errorsHeader {
+	border: 1px solid #9d261d;
+	background-color: #FAE5E3;
+	padding: 10px;
+	color: #e10007;
+	margin: 5px 0 5px 0;
+	display: none;
+}
+form ul li.error label {
+	color: #e10007;
+}
+form ul li.error input, form ul li.error textarea {
+	border: 1px solid #9D261D;
+	background-color: #FAE5E3;
+}
+button {
+	color: #333;
+	padding: 5px 14px 6px;
+	font-size: 13px;
+	border: 1px solid #999;
+	background-image: -webkit-linear-gradient(top, #ffffff, #e6e6e6);
+	background-image: -moz-linear-gradient(top, #ffffff, #e6e6e6);
+	background-image: -ms-linear-gradient(top, #ffffff, #e6e6e6);
+	border-radius: 5px;
+}
+button:hover {
+	cursor: pointer;
+	background-image: -webkit-linear-gradient(top, #e6e6e6, #d1d0d0);
+	background-image: -moz-linear-gradient(top, #e6e6e6, #d1d0d0);
+	background-image: -ms-linear-gradient(top, #e6e6e6, #d1d0d0);
+}
+button:active {
+	background-image: none;
+	background-color: #d1d0d0;
+}
+button.primary {
+	background-color: #0078e1;
+	color: #fff;
+	padding: 5px 14px 6px;
+	font-size: 13px;
+	border: 1px solid #999;
+	text-shadow: 0 1px 0 #999;
+	background-image: -webkit-linear-gradient(top, #049cdb, #0064cd);
+	background-image: -moz-linear-gradient(top, #049cdb, #0064cd);
+	border-radius: 5px;
+}
+button.primary:hover {
+	cursor: pointer;
+	background-color: #0164ba;
+	background-image: -webkit-linear-gradient(top, #0078e1, #0164ba);
+	background-image: -moz-linear-gradient(top, #0078e1, #0164ba);
+	background-image: -ms-linear-gradient(top, #0078e1, #0164ba);
+}
+button.primary:active {
+	background-image: none;
+	background-color: #0164ba;
+}
+button.important {
+	background-color: #c43c35;
+	background-image: -webkit-linear-gradient(top, #ee5f5b, #c43c35);
+	background-image: -moz-linear-gradient(top, #ee5f5b, #c43c35);
+	background-image: -ms-linear-gradient(top, #ee5f5b, #c43c35);
+	color: #fff;
+	text-shadow: 0 1px 0 #999;
+}
+button.important:hover {
+	background-image: -webkit-linear-gradient(top, #c43c35, #992e29);
+	background-image: -moz-linear-gradient(top, #c43c35, #992e29);
+	background-image: -ms-linear-gradient(top, #c43c35, #992e29);
+}
+button.important:active {
+	background-image:none;
+	background-color: #992e29;
+}
+
+#header {
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	padding-top: 25px;
+	background: url(/static/images/macTexture.png) repeat;
+}
+
+#header nav {
+	background-color: #dadada;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#dadada), to(#b1b0b0));
+	background-image: -moz-linear-gradient(top, #dadada, #b1b0b0);
+	background-image: -ms-linear-gradient(top, #dadada, #b1b0b0);
+	margin:  0 auto;
+	width: 1020px;
+	height: 40px;
+	border-radius: 5px;
+	box-shadow: 0 3px 5px #333;
+	-webkit-box-shadow: 0 3px 5px #333;
+	border: 1px solid #aaa;
+}
+nav ul {
+	list-style: none;
+}
+nav ul li {
+	float: left;
+}
+nav ul li a {
+	font-family: Comfortaa, Helvetica, sans-serif;
+	font-size: 16px;
+	display: block;
+	padding: 0 50px 0 50px;
+	height: 40px;
+	border-right: 1px solid #aaa;
+	color: #333;
+	text-align: center;
+	line-height: 40px;
+	font-weight: bold;
+	text-decoration: none;
+	text-transform: lowercase;
+}
+nav ul li a span {
+	color: #0078E1;
+}
+nav ul li a:hover {
+	background-color: #cccccc;
+	color: #e10007;
+}
+nav ul li a.selected {
+	color: #e10007;
+}
+nav ul li.search {
+	padding:  0 15px 0 15px;
+}
+nav ul li.search form {
+	height: 40px;
+	display: block;
+	line-height: 40px;
+}
+nav ul li.search form input {
+	font-size: 12px;
+	padding: 5px 25px 5px 8px;
+	background: url(/static/images/search.png) no-repeat 155px #e4e3e3;
+	border-radius: 15px;
+	border: 1px solid #999;
+	width: 145px;
+	color: #999;
+}
+nav ul li.search form input:focus {
+	background-color: #f0efef;
+	color: #555;
+}
+
+/* Body */
+#content {
+	width: 990px;
+	margin: 65px auto;
+}
+#posts {
+	float: left;
+	background-color: #fff;
+	width: 700px;
+	padding: 20px;
+	box-shadow: 0 5px 10px #333;
+	-webkit-box-shadow: 0 5px 10px #333;
+	border-radius: 5px;
+}
+
+.hoverbox {
+	border-radius: 5px;
+	box-shadow: 0 10px 10px #333;
+	-webkit-box-shadow: 0 10px 10px #333;
+	background-color: #fff;
+}
+#sidebar {
+	float: left;
+}
+#sidebar .sidebarWidget {
+	width: 200px;
+	margin: 35px 0 0 20px;
+	padding: 15px;
+	background-color: #fff;
+	border-radius: 5px;
+	box-shadow: 0 10px 10px #333;
+	-webkit-box-shadow: 0 10px 10px #333;
+	color: #555;
+	font-size: 14px;
+}
+#sidebar .sidebarWidget ul {
+	list-style:  none;
+}
+#sidebar .sidebarWidget ul li {
+	border-bottom: 1px solid #ccc;
+	padding: 10px 0 10px 0;
+}
+#sidebar .sidebarWidget ul li:last-child {
+	border-bottom: 0;
+}
+#sidebar .sidebarWidget ul li time {
+	font-size: .8em;
+	color: #aaa;
+}
+#sidebar .sidebarWidget h2 {
+	border-bottom: 1px solid #cccccc;
+	padding-bottom: 2px;
+}
+
+#sidebar .twitter a img {
+	margin-left: 30px;
+	border: 0;
+}
+
+/* Footer */
+#footer {
+	clear: left;
+	width: 100%;
+}
+#footer .copyright {
+	width: 950px;
+	padding: 20px;
+	margin: 0 auto;
+	color: #ccc;
+	text-shadow: #333 -1px 1px;
+}
+
+/* Globally used styles */
+.even {
+	background-color: #eee;
+}
+.error {
+	color: #e10007;
+}
+.success {
+	color: #309f30;
+}
+
+#admin {
+	position: fixed;
+	z-index: 150;
+	bottom: 0;
+	width: 100%;
+	background-color: #fff;
+	box-shadow: 0 -3px 10px #333;
+}
+#admin ul {
+	list-style: none;
+	width: 500px;
+	margin: 0 auto;
+}
+#admin ul li {
+	float: left;
+	line-height: 14px;
+}
+#admin ul li a {
+	border-right:  1px solid #333;
+	display: block;
+	padding:  10px;
+	font-weight: bold;
+}
+#admin ul li:last-child a {
+	border-right:  none;
+}
+
+
+
+

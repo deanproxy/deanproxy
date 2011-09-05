@@ -1,0 +1,80 @@
+#posts article {
+	padding-bottom: 10px;
+}
+#posts article:last-child {
+	border-bottom: 0;
+}
+#posts article header time, #content header span {
+	color: #999;
+}
+#posts article header span {
+	float: right;
+}
+#posts header  {
+	font-family: Comfortaa;
+	border-bottom: 1px solid #eee;
+	padding-bottom: 5px;
+	margin-bottom: 5px;
+}
+#posts article footer {
+	font-size: 14px;
+}
+
+
+#posts #comments article {
+	padding: 10px;
+	border-top: 1px solid #eee;
+	border-bottom:  1px solid #eee;
+	margin: 0;
+}
+#posts .comments article:last-child {
+	border-bottom: 1px solid #eee;
+}
+
+#comments article footer {
+	color: #999;
+	font-size: 12px;
+}
+#comments article p {
+	margin: 0;
+	padding: 0;
+}
+.commentForm {
+	width: 465px;
+	margin-top: 10px;
+}
+.commentForm ul {
+	list-style: none;
+}
+.commentForm ul li {
+	padding: 5px 0 5px 0;
+}
+.commentForm ul li label {
+	margin-left: 10px;
+	color: #999;
+}
+.commentForm ul li input[type=text] {
+	width: 270px;
+}
+.commentForm ul li:last-child {
+	text-align: right;
+}
+
+/* Edit post styles */
+.editPost input, .editPost textarea {
+	font-size: 14px;
+}
+.editPost input {
+	padding: 8px;
+	width: 400px;
+}
+.editPost textarea {
+	width: 98%;
+	height: 150px;
+}
+.editPost #preview {
+	margin: 10px 0 0 0;
+	border: 2px dashed #999;
+	padding: 10px;
+	border-radius: 5px;
+}

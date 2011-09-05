@@ -1,0 +1,75 @@
+{% load post_helpers %}
+
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>{% title request.path %} - [deanproxy] packaged me.</title>
+    {% js 'jquery-1.6.2.min.js' %}
+	{% js 'jquery.validate.min.js' %}
+	{% js 'jquery-ui-1.8.16.custom.min.js' %}
+	{% js 'main.js' %}
+
+	<link href='http://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet' type='text/css'>
+	{% css 'main.css' %}
+
+	{% block head_extras %} {% endblock %}
+</head>
+<body>
+	<div id="header">
+		<nav>
+			<ul>
+				<li>
+					<a href="/">
+						<span>dean</span>proxy
+					</a>
+				</li>
+				<li><a href="/code">Code</a></li>
+				<li><a href="/music">Music</a></li>
+				<li><a href="/about">About</a></li>
+				<li><a href="/contact">Contact</a></li>
+				<li class="search">
+					<form action="/blog/posts/search/" name="search" method="get">
+						<input type="text" name="query" value="Search"/>
+					</form>
+				</li>
+			</ul>
+		</nav>
+	</div>
+
+	<div id="content">
+		<div id="posts">
+			{% block content %} {% endblock %}
+		</div>
+		<div id="sidebar">
+			<div class="sidebarWidget twitter">
+				<h2>
+					<a href="http://twitter.com/#!/deanproxy">@deanproxy <img src="/static/images/twitterIcon.jpg"/></a>
+				</h2>
+				{% twitter 'deanproxy' %}
+			</div>
+			<div class="sidebarWidget latest">
+				<h2>Latest</h2>
+				{% latest_posts %}
+			</div>
+		</div>
+	</div>
+
+	<div id="footer">
+		<div class="copyright">
+			&copy; 2011 - Dean Jones -
+			boring design by me with inspiration from all over the net
+		</div>
+	</div>
+
+	{% if request.session.logged_in %}
+		<div id="admin">
+			<ul>
+				<li><a>Admin Panel</a></li>
+				<li><a href="/blog/posts/new/">Create New Post</a></li>
+				{% existing_post_actions request.path %}
+				<li><a href="/admin/logout/">Logout</a></li>
+			</ul>
+		</div>
+	{% endif %}
+</body>
+</html>

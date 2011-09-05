@@ -1,0 +1,32 @@
+<!doctype HTML>
+<html>
+<head>
+	<title>admin - [deanproxy]</title>
+	{% css 'main.css' %}
+	{% css 'admin.css' %}
+	{% js 'jquery-1.6.2.min.js' %}
+	{% js 'jquery.validate.min.js' %}
+	{% js 'login.js' %}
+</head>
+<body>
+	<div class="login hoverbox">
+		<h1>Login</h1>
+		<form name="login" action="/admin/login/" method="post">
+			{% csrf_token %}
+			<ul>
+				<li>
+					<label>Username</label>
+					<input type="text" name="username" class="required"/>
+				</li>
+				<li>
+					<label>Password</label>
+					<input type="password" name="password" class="required"/>
+				</li>
+				<li>
+					<button class="primary" id="submit">Login</button>
+				</li>
+			</ul>
+		</form>
+	</div>
+</body>
+</html>

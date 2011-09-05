@@ -1,0 +1,14 @@
+{% load post_helpers %}
+<article>
+	<header>
+		<h2><a href="{{ post.uri }}">{{ post.title }}</a></h2>
+		<time datetime="{{ post.created_at|date:'Y-m-d' }}">
+			{{ post.created_at|date:'j M, Y' }}
+		</time>
+		<span>{% total_comments post.comment_set.count %}</span>
+	</header>
+	{{ post.message|safe }}
+	<footer>
+		{% tags_to_string post.tags.all %}
+	</footer>
+</article>

@@ -1,0 +1,52 @@
+{% extends '_layouts/main.html' %}
+{% block head_extras %}
+	{% js 'new_post.js' %}
+	{% css 'post.css' %}
+{% endblock %}
+
+{% block content %}
+	<div class="editPost">
+		<h1>Create New Post</h1>
+		{% if post.id %}
+			<form name="post" action="/blog/posts/update/{{ post.id }}" method="post">
+				<input type="hidden" id="postId" value="{{ post.id }}"/>
+		{% else %}
+			<form name="post" action="/blog/posts/create/" method="post">
+		{% endif %}
+			{% csrf_token %}
+			<ul>
+				<li>
+					<input type="text" name="title" class="required defaultInput" value="{{ post.title|default:'Title of post' }}"/>
+				</li>
+				<li>
+					<textarea name="message" class="required">{{ post.message|safe }}</textarea>
+				</li>
+				<li>
+					<input type="text" name="tags" class="required defaultInput" value="{{ post.tags.all|join:', '|default:'Tags' }}"/>
+				</li>
+				<li>
+					{% if post.id %}
+						<button class="primary">Update this post</button>
+						<button class="cancel important" id="delete">Delete this post</button>
+					{% else %}
+						<button class="primary">Create new post</button>
+					{% endif %}
+				</li>
+			</ul>
+		</form>
+
+		<div id="preview">
+			<article>
+				<header>
+					<h2></h2>
+					<time>{% now "j M, Y" %}</time>
+					<span>0 Comments</span>
+				</header>
+				<p></p>
+				<footer>
+
+				</footer>
+			</article>
+		</div>
+	</div>
+{% endblock %}

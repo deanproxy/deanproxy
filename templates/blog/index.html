@@ -1,0 +1,12 @@
+{% extends '_layouts/main.html' %}
+{% block head_extras %}
+	{% css 'post.css' %}
+{% endblock %}
+
+{% block content %}
+
+	{% for post in posts %}
+		{% include 'blog/_post.html' %}
+	{% endfor %}
+
+{% endblock %}
