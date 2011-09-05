@@ -10,8 +10,8 @@
 </head>
 <body>
 	<div class="login hoverbox">
-		<h1>Login</h1>
-		<form name="login" action="/admin/login/" method="post">
+		<h2>Login</h2>
+		<form name="login" action="{% url auth_login_url %}" method="post">
 			{% csrf_token %}
 			<ul>
 				<li>

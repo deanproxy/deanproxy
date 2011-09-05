@@ -6,6 +6,7 @@
 }
 #posts article header time, #content header span {
 	color: #999;
+	font-size: .9em;
 }
 #posts article header span {
 	float: right;

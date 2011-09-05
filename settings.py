@@ -7,6 +7,8 @@ ADMINS = (
     # ('Your Name', 'your_email@example.com'),
 )
 
+DOMAIN_NAME = 'deanproxy.com'
+
 MANAGERS = ADMINS
 
 DATABASES = {
@@ -98,8 +100,8 @@ TEMPLATE_CONTEXT_PROCESSORS = (
 )
 
 MIDDLEWARE_CLASSES = (
-#    'django.middleware.common.CommonMiddleware',
-#    'django.contrib.sessions.middleware.SessionMiddleware',
+    'django.middleware.common.CommonMiddleware',
+    'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
 #    'django.contrib.auth.middleware.AuthenticationMiddleware',
 #    'django.contrib.messages.middleware.MessageMiddleware',
@@ -149,3 +151,12 @@ LOGGING = {
         },
     }
 }
+
+# Email
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = '587'
+EMAIL_HOST_USER = 'deanisageek@gmail.com'
+EMAIL_HOST_PASSWORD = 'r41nyd4y'
+EMAIL_USE_TLS = True
+
+

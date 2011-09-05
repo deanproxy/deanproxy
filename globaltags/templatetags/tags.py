@@ -26,7 +26,6 @@ def title(uri):
 @register.simple_tag
 def existing_post_actions(uri):
 	html = ''
-	print uri
 	match = re.match('/blog/posts/\d+/\d+/(\d+)[-\w]+\.html', uri)
 	if match:
 		id = match.groups()[0]

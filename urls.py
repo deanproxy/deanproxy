@@ -1,4 +1,4 @@
-from django.conf.urls.defaults import patterns, url
+from django.conf.urls.defaults import patterns, url, include
 from django.conf import settings
 
 # Uncomment the next two lines to enable the admin:
@@ -16,27 +16,15 @@ urlpatterns = patterns('',
 
     # Uncomment the next line to enable the admin:
     # url(r'^admin/', include(admin.site.urls)),
-	url(r'^blog/posts/$', 'deanproxy.blog.views.index'),
-	url(r'^blog/posts/\d+/\d+/(\d+)[-\w]+\.html', 'deanproxy.blog.views.show'),
-	url(r'^blog/posts/tag/(\w+)', 'deanproxy.blog.views.show_by_tag'),
-	url(r'^blog/posts/new/', 'deanproxy.blog.views.new_post'),
-	url(r'^blog/posts/create/', 'deanproxy.blog.views.create'),
-	url(r'^blog/posts/edit/(\d+)', 'deanproxy.blog.views.edit'),
-	url(r'^blog/posts/update/(\d+)', 'deanproxy.blog.views.update'),
-	url(r'^blog/posts/delete/(\d+)', 'deanproxy.blog.views.destroy'),
-	url(r'^blog/comments/create/', 'deanproxy.blog.views.create_comment'),
-#	url(r'^blog/comments/update/(\d+)', 'deanproxy.blog.views.update_comment'),
-	url(r'^blog/comments/delete/(\d+)', 'deanproxy.blog.views.delete_comment'),
-	url(r'^blog/posts/search/', 'deanproxy.blog.views.search'),
+	url(r'^blog/', include('blog.urls')),
+	url(r'^admin/', include('site_auth.urls')),
 
-#	url(r'^code/$', 'deanproxy.blog.views.code'),
-#	url(r'^about/$', 'deanproxy.blog.views.about'),
-#	url(r'^music/$', 'deanproxy.blog.views.music'),
+#	url(r'^code/$', 'deanproxy.blog.views.code', name='code_view_url'),
+#	url(r'^about/$', 'deanproxy.blog.views.about', name='about_view_url'),
+#	url(r'^music/$', 'deanproxy.blog.views.music', name='music_view_url'),
 
-	url(r'^admin/$', 'deanproxy.site_auth.views.index'),
-	url(r'^admin/login/', 'deanproxy.site_auth.views.login'),
-	url(r'^admin/logout/', 'deanproxy.site_auth.views.logout'),
 
-#	url(r'^contact/$', 'deanproxy.contact.views.index'),
-#	url(r'^contact/send/', 'deanproxy.contact.views.send'),
+
+#	url(r'^contact/$', 'deanproxy.contact.views.index', name='contact_url'),
+#	url(r'^contact/send/', 'deanproxy.contact.views.send', name='contact_send_url'),
 )

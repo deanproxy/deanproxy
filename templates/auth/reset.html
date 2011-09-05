@@ -1,0 +1,32 @@
+<!doctype HTML>
+<html>
+<head>
+	<title>admin - [deanproxy]</title>
+	{% css 'main.css' %}
+	{% css 'admin.css' %}
+	{% js 'jquery-1.6.2.min.js' %}
+	{% js 'jquery.validate.min.js' %}
+	{% js 'password.js' %}
+</head>
+<body>
+	<div class="login hoverbox">
+		<h2>Reset Password</h2>
+		<form name="reset" action="{% url auth_reset_submit_url %}" method="post">
+			{% csrf_token %}
+			<ul>
+				<li>
+					<label>New Password</label>
+					<input type="password" id='password' name="password" class="required"/>
+				</li>
+				<li>
+					<label>Retype New Password</label>
+					<input type="password" name="password_confirm" class="required"/>
+				</li>
+				<li>
+					<button class="primary" id="submit">Reset Password</button>
+				</li>
+			</ul>
+		</form>
+	</div>
+</body>
+</html>

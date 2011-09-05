@@ -28,7 +28,7 @@
 				<li><a href="/about">About</a></li>
 				<li><a href="/contact">Contact</a></li>
 				<li class="search">
-					<form action="/blog/posts/search/" name="search" method="get">
+					<form action="{% url blog_search_url %}" name="search" method="get">
 						<input type="text" name="query" value="Search"/>
 					</form>
 				</li>
@@ -64,9 +64,11 @@
 	{% if request.session.logged_in %}
 		<div id="admin">
 			<ul>
-				<li><a>Admin Panel</a></li>
-				<li><a href="/blog/posts/new/">Create New Post</a></li>
-				{% existing_post_actions request.path %}
+				<li><a href="{% url blog_post_new_url %}">Create Post</a></li>
+				{% if post.id %}
+					<li><a href="{% url blog_post_edit_url post.id %}">Edit This Post</a></li>
+				{% endif %}
+				<li><a href="{% url auth_reset_password_url %}">Reset Password</a></li>
 				<li><a href="/admin/logout/">Logout</a></li>
 			</ul>
 		</div>

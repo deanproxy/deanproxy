@@ -4,7 +4,7 @@
 }
 body {
 	font-family: Helvetica, "Times New Roman", sans-serif;
-	font-size: 16px;
+	font-size: 14px;
 	background: url(/static/images/macTexture.png) repeat;
 	color: #444;
 }
@@ -289,25 +289,31 @@ nav ul li.search form input:focus {
 #admin {
 	position: fixed;
 	z-index: 150;
-	bottom: 0;
-	width: 100%;
-	background-color: #fff;
-	box-shadow: 0 -3px 10px #333;
+	top: 25px;
+	left: 25px;
+	width: 100px;
+	box-shadow: 0 5px 10px #333;
+	border-radius: 5px;
+	font-size: 12px;
+	background-color: #dadada;
+	background-image: -webkit-linear-gradient(top, #dadada, #b1b0b0);
+	background-image: -moz-linear-gradient(top, #dadada, #b1b0b0);
+	background-image: -ms-linear-gradient(top, #dadada, #b1b0b0);
 }
 #admin ul {
 	list-style: none;
-	width: 500px;
 	margin: 0 auto;
 }
-#admin ul li {
-	float: left;
-	line-height: 14px;
-}
 #admin ul li a {
-	border-right:  1px solid #333;
+	border-bottom:  1px solid #333;
 	display: block;
 	padding:  10px;
 	font-weight: bold;
+	color: #000;
+}
+#admin ul li a:hover {
+	background-image: none;
+	color: #e10007;
 }
 #admin ul li:last-child a {
 	border-right:  none;

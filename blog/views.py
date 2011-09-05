@@ -1,3 +1,6 @@
+from django.conf import settings
+from django.core.mail import send_mail
+from django.core.urlresolvers import reverse
 from django.http import HttpResponse
 from django.shortcuts import get_object_or_404, render, redirect
 from blog.models import Post, Comment, Tag
@@ -66,14 +69,21 @@ def update(request, id):
 def destroy(request, id):
 	post = get_object_or_404(Post, pk=id)
 	post.delete()
-	return redirect('/blog/posts/')
+	return redirect(reverse('blog_url'))
 
 
 def create_comment(request):
 	status = 500
 	form = CommentForm(request.POST)
 	if form.is_valid():
-		form.save()
+		comment = form.save()
+		send_mail(
+			'[deanproxy] New Comment',
+			'A new post has been submitted on the post: %s\r\n\r\nhttp://%s/%s' %
+				(comment.post.title, settings.DOMAIN_NAME, comment.post.uri()),
+			'deanproxy <dean@deanproxy.com>',
+			['dean@deanproxy.com']
+		)
 		status = 200
 	return HttpResponse(status=status)
 

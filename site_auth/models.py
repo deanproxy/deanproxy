@@ -4,6 +4,9 @@ import hashlib
 class Admin(models.Model):
 	SALT = '$@67faltme'
 
+	class PermissionDenied(Exception):
+		pass
+
 	username = models.CharField(max_length=30)
 	password = models.CharField(max_length=128)
 
@@ -31,6 +34,7 @@ class Admin(models.Model):
 	def check_password(self, raw_password):
 		hash = Admin.make_password(raw_password)
 		return hash == self.password
+
 
 
 

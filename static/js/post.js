@@ -49,8 +49,8 @@
 		$('form[name=comment]').validate({
 			submitHandler: function(form) {
 				var li = $('#postComment').hide().parent('li');
-				li.html('Submitting...');
-				$.post('/blog/comments/create/', $(form).serialize(), function() {
+				li.append('<span>Submitting <img src="/static/images/loading-pacman.gif"/></span>');
+				$.post(form.action, $(form).serialize(), function() {
 					li.html('Thanks for your input!');
 					prependComment(form);
 					return false;
@@ -58,7 +58,8 @@
 					alert('There was an issue when submitting this comment.');
 					$('#postComment').show();
 				}).complete(function() {
-					$('#postComment').removeAttr('disabled');
+					$('#postComment').show();
+					li.children('span').remove();
 				});
 				return false;
 			},

@@ -21,7 +21,7 @@
 						Posted by {{ comment.name }},
 						on {{ comment.created_at|date:'j M, Y' }}
 						{% if request.session.logged_in %}
-							| <a rel="delete" href="/blog/comments/delete/{{ comment.id }}">Delete</a>
+							| <a rel="delete" href="{% url blog_comment_delete_url comment.id %}">Delete</a>
 						{% endif %}
 					</footer>
 				</article>
@@ -36,7 +36,7 @@
 		<div id="newCommentErrors" class="errorsHeader">
 			The fields highlighted in red are required.
 		</div>
-		<form action="/blog/comments/create/" name="comment" method="post">
+		<form action="{% url blog_comment_create_url %}" name="comment" method="post">
 			{% csrf_token %}
 			<input type="hidden" name="post" value="{{ post.id }}"/>
 			<ul>
