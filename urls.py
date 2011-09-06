@@ -20,9 +20,9 @@ urlpatterns = patterns('',
 	url(r'^admin/', include('site_auth.urls')),
 	url(r'^contact/', include('contact.urls')),
 
-#	url(r'^code/$', 'blog.views.code', name='code_view_url'),
-#	url(r'^about/$', 'blog.views.about', name='about_view_url'),
-#	url(r'^music/$', 'blog.views.music', name='music_view_url'),
+	url(r'^code/$', 'base.views.code', name='code_url'),
+	url(r'^about/$', 'base.views.about', name='about_url'),
+	url(r'^music/$', 'base.views.music', name='music_url'),
 #
 
 )

@@ -23,9 +23,9 @@
 						<span>dean</span>proxy
 					</a>
 				</li>
-				<li><a href="/code">Code</a></li>
-				<li><a href="/music">Music</a></li>
-				<li><a href="/about">About</a></li>
+				<li><a href="{% url code_url %}">Code</a></li>
+				<li><a href="{% url music_url %}">Music</a></li>
+				<li><a href="{% url about_url %}">About</a></li>
 				<li><a href="{% url contact_url %}">Contact</a></li>
 				<li class="search">
 					<form action="{% url blog_search_url %}" name="search" method="get">
