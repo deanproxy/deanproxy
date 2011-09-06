@@ -322,6 +322,16 @@ nav ul li.search form input:focus {
 	border-right:  none;
 }
 
+#msie {
+	display: none;
+	text-align: center;
+	background-color: #ffffff;
+	border-radius: 5px;
+	box-shadow: 0 5px 10px #999;
+	padding: 50px;
+	border: 5px solid #999;
+}
+
 
 
 

@@ -7,6 +7,7 @@
     {% js 'jquery-1.6.2.min.js' %}
 	{% js 'jquery.validate.min.js' %}
 	{% js 'jquery-ui-1.8.16.custom.min.js' %}
+	{% js 'jquery.lightbox_me.js' %}
 	{% js 'main.js' %}
 
 	<link href='http://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet' type='text/css'>
@@ -15,6 +16,10 @@
 	{% block head_extras %} {% endblock %}
 </head>
 <body>
+	<div id="msie">
+		<h3>Internet Explorer is a virus. This site may not work right with it.</h3>
+		<p><button id="ok" class="primary">Ok, Whatever</button></p>
+	</div>
 	<div id="header">
 		<nav>
 			<ul>

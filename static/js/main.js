@@ -9,5 +9,17 @@
 				$(this).val('Search');
 			}
 		});
+
+		/* Warn for IE */
+		if ($.browser.msie) {
+			$("#msie").lightbox_me({
+				centered: true,
+				onLoad: function() {
+					$('#ok').click(function() {
+						$('#msie').trigger('close');
+					})
+				}
+			});
+		}
 	});
 })(jQuery);

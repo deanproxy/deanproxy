@@ -15,6 +15,12 @@
 			}
 		});
 
+		$('#clear').click(function() {
+			$('#message').val('');
+			$('#email').val('');
+			return false;
+		});
+
 		$('form[name=contact]').validate({
 			wrapper: 'span',
 			errorPlacement: function(error, element) {
