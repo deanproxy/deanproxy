@@ -1,4 +1,4 @@
-from django.core.mail import send_mail
+from django.core.mail.message import EmailMessage
 from django.shortcuts import render
 from contact.forms import ContactForm
 
@@ -11,13 +11,13 @@ def send(request):
 	if form.is_valid():
 		message = form.cleaned_data['message']
 		email = form.cleaned_data['email']
-		message = 'From: %s\r\n\r\n' % email
-		send_mail(
+		mail = EmailMessage(
 			'[deanproxy] Contact from website',
 			message,
 			email,
 			[to],
-			fail_silently=False
+			headers={'Reply-To':email}
 		)
+		mail.send()
 		return render(request, 'contact/sent.html')
 	return render(request, 'contact/index.html')
