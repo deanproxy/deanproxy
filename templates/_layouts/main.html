@@ -26,7 +26,7 @@
 				<li><a href="/code">Code</a></li>
 				<li><a href="/music">Music</a></li>
 				<li><a href="/about">About</a></li>
-				<li><a href="/contact">Contact</a></li>
+				<li><a href="{% url contact_url %}">Contact</a></li>
 				<li class="search">
 					<form action="{% url blog_search_url %}" name="search" method="get">
 						<input type="text" name="query" value="Search"/>

@@ -1,0 +1,29 @@
+{% extends '_layouts/main.html' %}
+
+{% block head_extras %}
+	{% js 'contact.js' %}
+	{% css 'contact.css' %}
+{% endblock %}
+
+{% block content %}
+<div class="contact">
+	<h2>Contact Me</h2>
+	<form name="contact" method="post" action="{% url contact_send_url %}">
+		{% csrf_token %}
+		<ul>
+			<li>
+				<label>Your e-mail</label>
+				<input type="text" name="email" id="email" class="required email isEmpty" value="someone@something.com"/>
+			</li>
+			<li>
+				<label>What?</label>
+				<textarea id="message" name="message" class="required"></textarea>
+			</li>
+			<li>
+				<button class="primary">Send Message</button>
+				<button class="cancel">Clear</button>
+			</li>
+		</ul>
+	</form>
+</div>
+{% endblock %}
