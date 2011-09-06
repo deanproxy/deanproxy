@@ -1,4 +1,5 @@
 - Create music page
 - Create code page
-- Check browser... warn if IE.
+- Make settings.py have a development/production environment.
+- Do unit tests.
 
