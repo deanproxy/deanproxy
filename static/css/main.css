@@ -24,6 +24,10 @@ a[rel=delete] {
 h1, h2 {
 	font-family: Comfortaa, Helvetica, sans-serif;
 }
+h2 {
+	margin-bottom: 5px;
+	border-bottom: 1px solid #EEE;
+}
 h3 {
 	margin: 10px 0;
 }
@@ -327,9 +331,10 @@ nav ul li.search form input:focus {
 	text-align: center;
 	background-color: #ffffff;
 	border-radius: 5px;
-	box-shadow: 0 5px 10px #999;
+	box-shadow: 0 5px 10px #333;
 	padding: 50px;
-	border: 5px solid #999;
+	width: 350px;
+	border: 5px solid #000;
 }
 
 

@@ -116,6 +116,7 @@ INSTALLED_APPS = (
 	'deanproxy.blog',
 	'deanproxy.site_auth',
 	'deanproxy.twitter',
+	'deanproxy.github',
 #    'django.contrib.auth',
 #    'django.contrib.contenttypes',
     'django.contrib.sessions',

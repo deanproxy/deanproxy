@@ -1,10 +1,10 @@
-import datetime
 from django import template
 from twitter.models import Tweet, Twitter
 from django.utils import simplejson
+from dateutil.parser import parse
 import urllib2
 import logging
-import time
+import datetime
 
 register = template.Library()
 
@@ -12,16 +12,17 @@ register = template.Library()
 def twitter(username):
 	tweets = Tweet.objects.all()
 	twitter = Twitter.objects.all()
-	future = datetime.timedelta(0, 120)
+	future = datetime.timedelta(0, 300) # 5 minutes.
+	now = datetime.datetime.now()
 
 	if not twitter:
 		twitter = Twitter.objects.create()
-		last_updated = datetime.timedelta(0, 0)
+		last_updated = datetime.datetime(1979, 1, 1)
 	else:
 		twitter = twitter[0]
 		last_updated = twitter.last_updated
 
-	if last_updated <= last_updated + future:
+	if now - last_updated >= future:
 		twitter.last_updated += future
 		twitter.save()
 		tweets.delete()
@@ -38,8 +39,8 @@ def twitter(username):
 		else:
 			# I only need the text and the created at portions, and only 5 of them
 			for item in json[:5]:
-				date = time.strptime(item['created_at'], '%a %b %d %H:%M:%S +0000 %Y')
-				Tweet.objects.create(text=item['text'], created_at=time.strftime('%Y-%m-%d', date))
+				date = parse(item['created_at'])
+				Tweet.objects.create(text=item['text'], created_at=date)
 			tweets = Tweet.objects.all()
 
 	return {'tweets' : tweets}

@@ -1,3 +1,7 @@
+h2 {
+	border-bottom: none;
+	margin-bottom: 0;
+}
 #posts article {
 	padding-bottom: 10px;
 }

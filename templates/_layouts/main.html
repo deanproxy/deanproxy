@@ -8,6 +8,7 @@
 	{% js 'jquery.validate.min.js' %}
 	{% js 'jquery-ui-1.8.16.custom.min.js' %}
 	{% js 'jquery.lightbox_me.js' %}
+	{% js 'jquery.cookie.js' %}
 	{% js 'main.js' %}
 
 	<link href='http://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet' type='text/css'>
@@ -17,7 +18,13 @@
 </head>
 <body>
 	<div id="msie">
-		<h3>Internet Explorer is a virus. This site may not work right with it.</h3>
+		<img src="/static/images/zap.jpg"/>
+		<h3>Your browser is unsupported and squishy.</h3>
+		<p>
+			This site was designed to work with modern web browsers. It is mostly HTML5 and CSS3.
+			While you can attempt to use this site with older browsers, I am 100% positive it will
+			not look right or even function. Especially in Internet Explorer before version 9.
+		</p>
 		<p><button id="ok" class="primary">Ok, Whatever</button></p>
 	</div>
 	<div id="header">

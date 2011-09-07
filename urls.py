@@ -23,6 +23,5 @@ urlpatterns = patterns('',
 	url(r'^code/$', 'base.views.code', name='code_url'),
 	url(r'^about/$', 'base.views.about', name='about_url'),
 	url(r'^music/$', 'base.views.music', name='music_url'),
-#
 
 )
