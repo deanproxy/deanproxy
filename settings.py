@@ -8,6 +8,8 @@ ADMINS = (
 )
 
 DOMAIN_NAME = 'deanproxy.com'
+DJANGO_ROOT = os.path.dirname(os.path.realpath(django.__file__))
+SITE_ROOT = os.path.dirname(os.path.realpath(__file__))
 
 MANAGERS = ADMINS
 
@@ -58,7 +60,7 @@ MEDIA_URL = ''
 # Don't put anything in this directory yourself; store your static files
 # in apdps' "static/" subdirectories and in STATICFILES_DIRS.
 # Example: "/home/media/media.lawrence.com/static/"
-STATIC_ROOT = '/Users/dean/Code/deanproxy/static/'
+STATIC_ROOT = os.path.join(SITE_ROOT, 'static')
 
 # URL prefix for static files.
 # Example: "http://media.lawrence.com/static/"
@@ -71,7 +73,6 @@ ADMIN_MEDIA_PREFIX = '/static/admin/'
 
 # Additional locations of static files
 STATICFILES_DIRS = (
-	'/Users/dean/Code/deanproxy/static/',
     # Put strings here, like "/home/html/static" or "C:/www/django/static".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
@@ -107,16 +108,18 @@ MIDDLEWARE_CLASSES = (
 #    'django.contrib.messages.middleware.MessageMiddleware',
 )
 
-ROOT_URLCONF = 'deanproxy.urls'
+ROOT_URLCONF = 'urls'
 
-TEMPLATE_DIRS = ('/Users/dean/Code/Deanproxy/templates',)
+TEMPLATE_DIRS = (
+	os.path.join(SITE_ROOT, 'templates'),
+)
 
 INSTALLED_APPS = (
-	'deanproxy.globaltags',
-	'deanproxy.blog',
-	'deanproxy.site_auth',
-	'deanproxy.twitter',
-	'deanproxy.github',
+	'globaltags',
+	'blog',
+	'site_auth',
+	'twitter',
+	'github',
 #    'django.contrib.auth',
 #    'django.contrib.contenttypes',
     'django.contrib.sessions',

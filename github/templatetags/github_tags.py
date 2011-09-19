@@ -8,7 +8,7 @@ import logging
 
 register = template.Library()
 
-@register.simple_tag
+@register.inclusion_tag('github.html')
 def last_commit(project_name):
 	html = '<span class="error">Error getting last github commit</span>'
 	commit = get_commit(project_name)
@@ -25,7 +25,7 @@ def last_commit(project_name):
 
 
 def get_latest_commit(project_name):
-	json = None
+	commit = {}
 	try:
 		url = urllib2.urlopen('http://github.com/api/v2/json/commits/list/deanproxy/%s/master' % project_name)
 		data = url.read()
@@ -37,30 +37,10 @@ def get_latest_commit(project_name):
 	except urllib2.HTTPError, error:
 		logging.error('An HTTPError was raised: %s' % error)
 
-	if not json:
-		return None
-	return json['commits'][0]
-
-def get_commit(project_name):
-	now = datetime.datetime.now()
-	future = datetime.timedelta(0, 300) # 5 Minutes
-	try:
-		commit = Commit.objects.get(pk=project_name)
-	except Commit.DoesNotExist:
-		commit = None
-
-	if not commit or now - commit.updated_at >= future:
-		if commit:
-			commit.delete()
-		json = get_latest_commit(project_name)
-		if json:
-			date = parse(json['committed_date'])
-			commit = Commit.objects.create(
-				committed_date=date,
-				message=json['message'],
-				committer=json['committer']['name'],
-				project=project_name
-			)
-			commit.save()
+	if json:
+		most_recent = json['commits'][0]
+		commit['committed_date'] = parse(most_recent['committed_date'])
+		commit['message'] = most_recent['message']
+		commit['committer'] = most_recent['committer']['name']
 
 	return commit
