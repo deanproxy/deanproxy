@@ -4,6 +4,7 @@
     <list default="true" id="076a9f04-3964-468a-a02f-573825526e8f" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/css/post.css" afterPath="$PROJECT_DIR$/static/css/post.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/blog/_post.html" afterPath="$PROJECT_DIR$/templates/blog/_post.html" />
     </list>
     <ignored path="deanproxy.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -92,16 +93,16 @@
       <file leaf-file-name="post.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/static/css/post.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="23" selection-start="470" selection-end="470" vertical-scroll-proportion="0.51391864">
+            <state line="25" column="16" selection-start="444" selection-end="444" vertical-scroll-proportion="0.4496788">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="django.wsgi" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/django.wsgi">
+      <file leaf-file-name="_post.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/blog/_post.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="17" selection-start="298" selection-end="298" vertical-scroll-proportion="0.0">
+            <state line="11" column="14" selection-start="318" selection-end="318" vertical-scroll-proportion="-6.875">
               <folding />
             </state>
           </provider>
@@ -166,7 +167,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/globaltags/templatetags/twitter_tags.py" />
         <option value="$PROJECT_DIR$/templates/blog/edit.html" />
         <option value="$PROJECT_DIR$/templates/blog/show.html" />
         <option value="$PROJECT_DIR$/templates/contact/index.html" />
@@ -181,6 +181,7 @@
         <option value="$PROJECT_DIR$/templates/base/music.html" />
         <option value="$PROJECT_DIR$/templates/auth/login.html" />
         <option value="$PROJECT_DIR$/templates/auth/reset.html" />
+        <option value="$PROJECT_DIR$/templates/blog/_post.html" />
         <option value="$PROJECT_DIR$/static/css/post.css" />
       </list>
     </option>
@@ -841,13 +842,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/blog/_post.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/css/music.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="17" selection-start="247" selection-end="247" vertical-scroll-proportion="0.0">
@@ -925,9 +919,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/templates/blog/_post.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="14" selection-start="318" selection-end="318" vertical-scroll-proportion="-6.875">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/static/css/post.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="23" selection-start="470" selection-end="470" vertical-scroll-proportion="0.51391864">
+        <state line="25" column="16" selection-start="444" selection-end="444" vertical-scroll-proportion="0.4496788">
           <folding />
         </state>
       </provider>

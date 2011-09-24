@@ -9,6 +9,6 @@
 	</header>
 	{{ post.message|safe }}
 	<footer>
-		{% tags_to_string post.tags.all %}
+		Tags: {% tags_to_string post.tags.all %}
 	</footer>
 </article>
