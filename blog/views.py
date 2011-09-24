@@ -63,7 +63,7 @@ def update(request, id):
 		post = form.save()
 		post.add_tags(request.POST['tags'])
 		return redirect(post.uri())
-	return render(request, 'blog/edit.html', {'post',form.instance})
+	return render(request, 'blog/edit.html', {'post':post})
 
 @login_required
 def destroy(request, id):
