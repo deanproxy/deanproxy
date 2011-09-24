@@ -1,7 +1,12 @@
 {% extends '_layouts/main.html' %}
 {% load helper_tags %}
 {% block head_extras %}
+	{% js 'prettify.js' %}
+	{% js 'lang-css.js' %}
+	{% js 'lang-sql.js' %}
+	{% js 'post.js' %}
 	{% css 'post.css' %}
+	{% css 'myprettify.css' %}
 {% endblock %}
 
 {% block content %}

@@ -1,0 +1,20 @@
+@include url('/static/css/prettify.css');
+.prettyprint {
+	background-color: #111;
+	color: #eee;
+	padding: 5px;
+	max-height: 300px;
+	overflow: auto;
+}
+.kwd {
+	color: rgb(226,137,100);
+}
+.typ {
+	color: #eee;
+}
+.str {
+	color: rgb(101,176,66);
+}
+.lit {
+	color: rgb(51,135,204);
+}

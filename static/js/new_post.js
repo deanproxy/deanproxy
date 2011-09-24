@@ -1,4 +1,5 @@
 (function($) {
+
 	$(document).ready(function() {
 		$('input[name=title]').focus(function() {
 			if ($(this).val() === 'Title of post') {
@@ -38,6 +39,7 @@
 		$('textarea').keyup(function() {
 			$('#preview article p').html($(this).val());
 		});
+		setInterval(prettyPrint, 20000);
 
 		/* Validations */
 		$.validator.addMethod('defaultInput', function(value, element) {

@@ -77,5 +77,8 @@
 				}
 			}
 		});
+
+		/* Highlight javascript code */
+		prettyPrint();
 	});
 })(jQuery);
