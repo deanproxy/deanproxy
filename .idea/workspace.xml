@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="076a9f04-3964-468a-a02f-573825526e8f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/404.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/500.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/404.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/500.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/css/main.css" afterPath="$PROJECT_DIR$/static/css/main.css" />
     </list>
     <ignored path="deanproxy.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -763,7 +762,7 @@
     <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="true" />
     <option name="DEFAULT_PATCH_EXTENSION" value="patch" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="music links didn't work" />
+    <option name="LAST_COMMIT_MESSAGE" value="added error pages" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -791,6 +790,7 @@
     <MESSAGE value="include helper tags" />
     <MESSAGE value="style some footer stuff" />
     <MESSAGE value="music links didn't work" />
+    <MESSAGE value="added error pages" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
