@@ -65,7 +65,7 @@
       <file leaf-file-name="music.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/base/music.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="70" column="64" selection-start="2584" selection-end="2584" vertical-scroll-proportion="0.9322799">
+            <state line="35" column="68" selection-start="1234" selection-end="1234" vertical-scroll-proportion="0.18735892">
               <folding />
             </state>
           </provider>
@@ -774,7 +774,7 @@
     <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="true" />
     <option name="DEFAULT_PATCH_EXTENSION" value="patch" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="style some footer stuff" />
+    <option name="LAST_COMMIT_MESSAGE" value="music links didn't work" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -801,6 +801,7 @@
     <MESSAGE value="path errors" />
     <MESSAGE value="include helper tags" />
     <MESSAGE value="style some footer stuff" />
+    <MESSAGE value="music links didn't work" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -928,7 +929,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/base/music.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="70" column="64" selection-start="2584" selection-end="2584" vertical-scroll-proportion="0.9322799">
+        <state line="35" column="68" selection-start="1234" selection-end="1234" vertical-scroll-proportion="0.18735892">
           <folding />
         </state>
       </provider>
