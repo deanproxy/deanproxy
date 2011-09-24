@@ -230,6 +230,16 @@ nav ul li.search form input:focus {
 	-webkit-box-shadow: 0 10px 10px #333;
 	background-color: #fff;
 }
+.errors {
+	text-align: center;
+	background: white;
+    border: 1px solid #ccc;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+	padding:  20px;
+}
 #sidebar {
 	float: left;
 }
