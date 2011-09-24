@@ -65,7 +65,7 @@
       <file leaf-file-name="music.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/base/music.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="68" selection-start="1234" selection-end="1234" vertical-scroll-proportion="0.18735892">
+            <state line="35" column="80" selection-start="1246" selection-end="1246" vertical-scroll-proportion="0.18735892">
               <folding />
             </state>
           </provider>
@@ -929,7 +929,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/base/music.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="68" selection-start="1234" selection-end="1234" vertical-scroll-proportion="0.18735892">
+        <state line="35" column="80" selection-start="1246" selection-end="1246" vertical-scroll-proportion="0.18735892">
           <folding />
         </state>
       </provider>
