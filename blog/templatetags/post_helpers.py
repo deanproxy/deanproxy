@@ -1,5 +1,5 @@
 from django import template
-from deanproxy.blog.models import Post
+from blog.models import Post
 
 register = template.Library()
 
