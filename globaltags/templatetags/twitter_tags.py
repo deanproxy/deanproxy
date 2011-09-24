@@ -1,31 +1,17 @@
 from django import template
-from twitter.models import Tweet, Twitter
 from django.utils import simplejson
 from dateutil.parser import parse
+from django.core.cache import cache
 import urllib2
 import logging
-import datetime
 
 register = template.Library()
 
-@register.inclusion_tag('../templates/_twitter.html')
+@register.inclusion_tag('base/_twitter.html')
 def twitter(username):
-	tweets = Tweet.objects.all()
-	twitter = Twitter.objects.all()
-	future = datetime.timedelta(0, 300) # 5 minutes.
-	now = datetime.datetime.now()
-
-	if not twitter:
-		twitter = Twitter.objects.create()
-		last_updated = datetime.datetime(1979, 1, 1)
-	else:
-		twitter = twitter[0]
-		last_updated = twitter.last_updated
-
-	if now - last_updated >= future:
-		twitter.last_updated += future
-		twitter.save()
-		tweets.delete()
+	tweets = cache.get('twitter')
+	if not tweets:
+		tweets = []
 		try:
 			url = urllib2.urlopen('http://twitter.com/statuses/user_timeline.json?screen_name=%s&include_rts=true&trim_user=true' % username)
 			data = url.read()
@@ -39,8 +25,10 @@ def twitter(username):
 		else:
 			# I only need the text and the created at portions, and only 5 of them
 			for item in json[:5]:
-				date = parse(item['created_at'])
-				Tweet.objects.create(text=item['text'], created_at=date)
-			tweets = Tweet.objects.all()
+				tweets.append({
+					'created_at': parse(item['created_at']),
+					'text': item['text']
+				})
+			cache.set('twitter', tweets, 300)
 
 	return {'tweets' : tweets}

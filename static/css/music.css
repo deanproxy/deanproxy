@@ -1,0 +1,15 @@
+.music article header h3 {
+	margin-bottom: 0;
+}
+.music article header {
+	margin-bottom: 5px;
+}
+.music article header time, .music article header span {
+	color: #999;
+}
+.music article header span {
+	float: right;
+}
+.music article p {
+	clear: right;
+}

@@ -1,8 +1,71 @@
 {% extends '_layouts/main.html' %}
-
+{% load helper_tags %}
+{% block head_extras %}
+	{% css 'music.css' %}
+{% endblock %}
 {% block content %}
 	<div class="music">
 		<h2>Music</h2>
-		<p>Not here yet...</p>
+		<article>
+			<header>
+				<h3><a href="/download/music/Dean+Jones+-+Voxy.mp3">Voxy</a></h3>
+				<time datetime="2010-11-14">Nov 14, 2010</time>
+				<span>Vocal House/Progressive</span>
+			</header>
+			<p>
+				Another Ableton Live mix.  I was really into vocals and Kaskade at the time and
+				wanted to make a mix of all of my favorite Kaskade tracks for I could listen to
+				them in a nice mix fashion.  I also threw in some other favs at the end of it all
+				that aren't Kaskade related.
+			</p>
+		</article>
+		<article>
+			<header>
+				<h3><a href="/download/music/Dean+Jones+-+AEIOU.mp3">AEIOU</a></h3>
+				<time datetime="2009-08-24">Aug 24, 2009</time>
+				<span>Electro/Progressive</span>
+			</header>
+			<p>
+				This was my first Electro House type mix as well as my first mix using Ableton Live.
+				A lot of dirty beats in here but it eventually
+				transitions into a sort of progressive house type set.  I like it, personally.
+			</p>
+		</article>
+		<article>
+			<header>
+				<h3><a href="/download/music/Dean+Jones+-+Redux.mp3">Redux</a></h3>
+				<time datetime="2005-05-15">May 15, 2005</time>
+				<span>Progressive House</span>
+			</header>
+			<p>
+				A progressive house mix done using CDJ's.  I worked on this mix a lot and did it over
+				and over until I couldn't stand the music anymore.  I think I have personally listened to
+				this mix a handful of times since I couldn't stand the tracks anymore after I was done
+				mixing them.
+			</p>
+		</article>
+		<article>
+			<header>
+				<h3><a href="/download/music/Dean+Jones+-+Toronto.mp3">Toronto</a></h3>
+				<time datetime="2005-03-01">Mar 1, 2005</time>
+				<span>Progressive House</span>
+			</header>
+			<p>
+				A progressive house mix done on CDJ's as well. This was done while I was on a short
+				leave from work.  I was heading out to Toronto in 2 days, hence the name of the mix.
+			</p>
+		</article>
+		<article>
+			<header>
+				<h3><a href="/download/music/Dean+Jones+-+Taboo.mp3">Taboo</a></h3>
+				<time datetime="2005-09-15">Sep 15, 2004</time>
+				<span>Trance</span>
+			</header>
+			<p>
+				This mix was done using pure Vinyl and some Technics turntables. It's a trance mix and
+				it was done for my sister as she's a big Trance fan.  She was opening a tanning salon
+				called Taboo Tan and she wanted a mix she could play for her customers.
+			</p>
+		</article>
 	</div>
 {% endblock %}

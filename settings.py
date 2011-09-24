@@ -20,7 +20,7 @@ if os.getenv('DJANGO_RUN_ENV', '') == 'production':
 		'default': {
 				'ENGINE': 'django.db.backends.mysql',
 				'OPTIONS': {
-						'read_default_file': '/var/www/siteconfigs/deanproxy/mysql.cnf'
+					'read_default_file': '/var/www/siteconfigs/deanproxy/mysql.cnf'
 				}
 		}
 	}
@@ -130,8 +130,6 @@ INSTALLED_APPS = (
 	'globaltags',
 	'blog',
 	'site_auth',
-	'twitter',
-	'github',
 #    'django.contrib.auth',
 #    'django.contrib.contenttypes',
     'django.contrib.sessions',
@@ -166,6 +164,14 @@ LOGGING = {
             'propagate': True,
         },
     }
+}
+
+CACHES = {
+	'default': {
+		'BACKEND': 'django.core.cache.backends.locmem.LocMemCache',
+		'LOCATION': 'smokey',
+		'TIMEOUT': 300
+	}
 }
 
 # Email

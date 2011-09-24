@@ -255,6 +255,7 @@ nav ul li.search form input:focus {
 	border-bottom: 0;
 }
 #sidebar .sidebarWidget ul li time {
+	display: block;
 	font-size: .8em;
 	color: #aaa;
 }

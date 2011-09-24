@@ -1,0 +1,14 @@
+.code article header {
+	margin-bottom: 5px;
+}
+.code article header h3 {
+	margin-bottom: 0;
+}
+
+.githubCommit {
+	color: #777;
+}
+.githubCommit .author, .githubCommit time {
+	color: #999;
+	font-style: italic;
+}

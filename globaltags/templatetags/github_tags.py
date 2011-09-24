@@ -1,28 +1,11 @@
 from django import template
-from github.models import Commit
 from django.utils import simplejson
 from dateutil.parser import parse
+from django.core.cache import cache
 import urllib2
-import datetime
 import logging
 
 register = template.Library()
-
-@register.inclusion_tag('github.html')
-def last_commit(project_name):
-	html = '<span class="error">Error getting last github commit</span>'
-	commit = get_commit(project_name)
-	if commit:
-		html = """
-				<div class="githubCommit">
-		  			Last commit: <span class="message">%s</span>
-		  			<span class="author">by %s</span>
-		  			<time datetime="%s">on %s</time>
-	    		</div>
-	    """ % (commit.message, commit.committer, commit.committed_date, commit.committed_date.strftime("%d %b, %Y"))
-
-	return html
-
 
 def get_latest_commit(project_name):
 	commit = {}
@@ -44,3 +27,24 @@ def get_latest_commit(project_name):
 		commit['committer'] = most_recent['committer']['name']
 
 	return commit
+
+@register.simple_tag
+def last_commit(project_name):
+	cached_key = 'git-' + project_name
+	html = '<span class="error">Error getting last github commit</span>'
+	commit = cache.get(cached_key)
+	if not commit:
+		commit = get_latest_commit(project_name)
+
+	if commit:
+		cache.set(cached_key, commit, 300)
+		html = """
+				<div class="githubCommit">
+		  			Last commit: <span class="message">%s</span>
+		  			<span class="author">by %s</span>
+		  			<time datetime="%s">on %s</time>
+	    		</div>
+	    """ % (commit['message'], commit['committer'], commit['committed_date'],
+			   commit['committed_date'].strftime("%d %b, %Y"))
+
+	return html
