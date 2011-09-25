@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="076a9f04-3964-468a-a02f-573825526e8f" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/css/post.css" afterPath="$PROJECT_DIR$/static/css/post.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/css/main.css" afterPath="$PROJECT_DIR$/static/css/main.css" />
     </list>
     <ignored path="deanproxy.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -65,7 +65,7 @@
       <file leaf-file-name="edit.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/blog/edit.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="23" selection-start="174" selection-end="174" vertical-scroll-proportion="-3.75">
+            <state line="6" column="23" selection-start="174" selection-end="174" vertical-scroll-proportion="-1.25">
               <folding />
             </state>
           </provider>
@@ -98,19 +98,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.css" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="main.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/static/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="222" column="28" selection-start="4733" selection-end="4733" vertical-scroll-proportion="0.0">
+            <state line="11" column="26" selection-start="211" selection-end="211" vertical-scroll-proportion="0.35331905">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="post.css" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="post.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static/css/post.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="21" selection-start="83" selection-end="83" vertical-scroll-proportion="0.16059957">
+            <state line="5" column="21" selection-start="83" selection-end="83" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -177,11 +177,11 @@
         <option value="$PROJECT_DIR$/templates/blog/show.html" />
         <option value="$PROJECT_DIR$/static/js/new_post.js" />
         <option value="$PROJECT_DIR$/settings.py" />
-        <option value="$PROJECT_DIR$/static/css/main.css" />
         <option value="$PROJECT_DIR$/globaltags/templatetags/helper_tags.py" />
         <option value="$PROJECT_DIR$/globaltags/templatetags/github_tags.py" />
         <option value="$PROJECT_DIR$/blog/templatetags/post_helpers.py" />
         <option value="$PROJECT_DIR$/static/css/post.css" />
+        <option value="$PROJECT_DIR$/static/css/main.css" />
       </list>
     </option>
   </component>
@@ -806,7 +806,7 @@
     <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="true" />
     <option name="DEFAULT_PATCH_EXTENSION" value="patch" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="lastest posts were in the wrong order" />
+    <option name="LAST_COMMIT_MESSAGE" value="added padding" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -839,6 +839,7 @@
     <MESSAGE value="added syntax highlighting for blog posts" />
     <MESSAGE value="use localhost for mailing" />
     <MESSAGE value="lastest posts were in the wrong order" />
+    <MESSAGE value="added padding" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -901,23 +902,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/blog/edit.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="23" selection-start="174" selection-end="174" vertical-scroll-proportion="-3.75">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/js/post.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="81" column="22" selection-start="2495" selection-end="2495" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/js/new_post.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="50" selection-start="184" selection-end="184" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -957,16 +944,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/main.css">
+    <entry file="file://$PROJECT_DIR$/static/css/post.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="222" column="28" selection-start="4733" selection-end="4733" vertical-scroll-proportion="0.0">
+        <state line="5" column="21" selection-start="83" selection-end="83" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/post.css">
+    <entry file="file://$PROJECT_DIR$/static/js/new_post.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="21" selection-start="83" selection-end="83" vertical-scroll-proportion="0.16059957">
+        <state line="7" column="50" selection-start="184" selection-end="184" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/blog/edit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="23" selection-start="174" selection-end="174" vertical-scroll-proportion="-1.25">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="26" selection-start="211" selection-end="211" vertical-scroll-proportion="0.35331905">
           <folding />
         </state>
       </provider>
