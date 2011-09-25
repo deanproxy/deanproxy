@@ -18,23 +18,23 @@ MANAGERS = ADMINS
 if os.getenv('DJANGO_RUN_ENV', '') == 'production':
 	DATABASES = {
 		'default': {
-				'ENGINE': 'django.db.backends.mysql',
-				'OPTIONS': {
-					'read_default_file': '/var/www/siteconfigs/deanproxy/mysql.cnf'
-				}
+			'ENGINE': 'django.db.backends.mysql',
+			'OPTIONS': {
+				'read_default_file': '/var/www/siteconfigs/deanproxy/mysql.cnf'
+			}
 		}
 	}
 else:
-		DATABASES = {
-			'default': {
-				'ENGINE': 'django.db.backends.sqlite3', # Add 'postgresql_psycopg2', 'postgresql', 'mysql', 'sqlite3' or 'oracle'.
-				'NAME': 'deanproxy.db',                      # Or path to database file if using sqlite3.
-				'USER': '',                      # Not used with sqlite3.
-				'PASSWORD': '',                  # Not used with sqlite3.
-				'HOST': '',                      # Set to empty string for localhost. Not used with sqlite3.
-				'PORT': '',                      # Set to empty string for default. Not used with sqlite3.
-			}
+	DATABASES = {
+		'default': {
+			'ENGINE': 'django.db.backends.sqlite3', # Add 'postgresql_psycopg2', 'postgresql', 'mysql', 'sqlite3' or 'oracle'.
+			'NAME': 'deanproxy.db',                      # Or path to database file if using sqlite3.
+			'USER': '',                      # Not used with sqlite3.
+			'PASSWORD': '',                  # Not used with sqlite3.
+			'HOST': '',                      # Set to empty string for localhost. Not used with sqlite3.
+			'PORT': '',                      # Set to empty string for default. Not used with sqlite3.
 		}
+	}
 
 # Local time zone for this installation. Choices can be found here:
 # http://en.wikipedia.org/wiki/List_of_tz_zones_by_name
@@ -175,10 +175,7 @@ CACHES = {
 }
 
 # Email
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_PORT = '587'
-EMAIL_HOST_USER = 'deanisageek@gmail.com'
-EMAIL_HOST_PASSWORD = 'r41nyd4y'
-EMAIL_USE_TLS = True
+EMAIL_HOST = 'localhost'
+EMAIL_PORT = '25'
 
 

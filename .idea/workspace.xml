@@ -2,19 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="076a9f04-3964-468a-a02f-573825526e8f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/css/myprettify.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/css/prettify.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lang-css.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lang-scala.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lang-sql.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/lang-yaml.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/prettify.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/js/new_post.js" afterPath="$PROJECT_DIR$/static/js/new_post.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/js/post.js" afterPath="$PROJECT_DIR$/static/js/post.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/blog/edit.html" afterPath="$PROJECT_DIR$/templates/blog/edit.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/blog/index.html" afterPath="$PROJECT_DIR$/templates/blog/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/blog/show.html" afterPath="$PROJECT_DIR$/templates/blog/show.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/settings.py" afterPath="$PROJECT_DIR$/settings.py" />
     </list>
     <ignored path="deanproxy.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -136,10 +125,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="new_post.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="new_post.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static/js/new_post.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="41" column="20" selection-start="1098" selection-end="1098" vertical-scroll-proportion="0.4496788">
+            <state line="7" column="50" selection-start="184" selection-end="184" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="settings.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="178" column="16" selection-start="5593" selection-end="5593" vertical-scroll-proportion="1.2643172">
               <folding />
             </state>
           </provider>
@@ -149,15 +147,6 @@
         <entry file="file://$PROJECT_DIR$/static/css/myprettify.css">
           <provider selected="true" editor-type-id="text-editor">
             <state line="5" column="17" selection-start="125" selection-end="125" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="login.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file:///Library/Python/2.7/site-packages/django/contrib/admin/media/css/login.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="3" selection-start="79" selection-end="235" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -184,7 +173,6 @@
         <option value="$PROJECT_DIR$/static/css/post.css" />
         <option value="$PROJECT_DIR$/templates/base/music.html" />
         <option value="$PROJECT_DIR$/static/css/main.css" />
-        <option value="$PROJECT_DIR$/settings.py" />
         <option value="$PROJECT_DIR$/templates/404.html" />
         <option value="$PROJECT_DIR$/templates/500.html" />
         <option value="$PROJECT_DIR$/static/js/post.js" />
@@ -193,6 +181,7 @@
         <option value="$PROJECT_DIR$/templates/blog/edit.html" />
         <option value="$PROJECT_DIR$/templates/blog/show.html" />
         <option value="$PROJECT_DIR$/static/js/new_post.js" />
+        <option value="$PROJECT_DIR$/settings.py" />
       </list>
     </option>
   </component>
@@ -777,7 +766,8 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39814815" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32658958" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32539684" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -787,7 +777,6 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -817,7 +806,7 @@
     <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="true" />
     <option name="DEFAULT_PATCH_EXTENSION" value="patch" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="added error images" />
+    <option name="LAST_COMMIT_MESSAGE" value="added syntax highlighting for blog posts" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -847,6 +836,7 @@
     <MESSAGE value="music links didn't work" />
     <MESSAGE value="added error pages" />
     <MESSAGE value="added error images" />
+    <MESSAGE value="added syntax highlighting for blog posts" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -884,11 +874,6 @@
     <entry file="file://$PROJECT_DIR$/templates/404.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="36" selection-start="238" selection-end="238" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="12" selection-start="78" selection-end="78" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/static/css/main.css">
@@ -968,7 +953,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/static/js/new_post.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="20" selection-start="1098" selection-end="1098" vertical-scroll-proportion="0.4496788">
+        <state line="7" column="50" selection-start="184" selection-end="184" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="178" column="16" selection-start="5593" selection-end="5593" vertical-scroll-proportion="1.2643172">
           <folding />
         </state>
       </provider>
