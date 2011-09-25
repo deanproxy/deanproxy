@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="076a9f04-3964-468a-a02f-573825526e8f" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/templatetags/post_helpers.py" afterPath="$PROJECT_DIR$/blog/templatetags/post_helpers.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/css/post.css" afterPath="$PROJECT_DIR$/static/css/post.css" />
     </list>
     <ignored path="deanproxy.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -62,15 +62,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="show.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/blog/show.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="23" selection-start="225" selection-end="225" vertical-scroll-proportion="-4.375">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="edit.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/blog/edit.html">
           <provider selected="true" editor-type-id="text-editor">
@@ -116,10 +107,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="post_helpers.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="post.css" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/static/css/post.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="21" selection-start="83" selection-end="83" vertical-scroll-proportion="0.16059957">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="post_helpers.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/blog/templatetags/post_helpers.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="57" selection-start="590" selection-end="590" vertical-scroll-proportion="0.77087796">
+            <state line="25" column="57" selection-start="590" selection-end="590" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -167,7 +167,6 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/templates/blog/_post.html" />
-        <option value="$PROJECT_DIR$/static/css/post.css" />
         <option value="$PROJECT_DIR$/templates/base/music.html" />
         <option value="$PROJECT_DIR$/templates/404.html" />
         <option value="$PROJECT_DIR$/templates/500.html" />
@@ -182,6 +181,7 @@
         <option value="$PROJECT_DIR$/globaltags/templatetags/helper_tags.py" />
         <option value="$PROJECT_DIR$/globaltags/templatetags/github_tags.py" />
         <option value="$PROJECT_DIR$/blog/templatetags/post_helpers.py" />
+        <option value="$PROJECT_DIR$/static/css/post.css" />
       </list>
     </option>
   </component>
@@ -806,7 +806,7 @@
     <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="true" />
     <option name="DEFAULT_PATCH_EXTENSION" value="patch" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="use localhost for mailing" />
+    <option name="LAST_COMMIT_MESSAGE" value="lastest posts were in the wrong order" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -838,6 +838,7 @@
     <MESSAGE value="added error images" />
     <MESSAGE value="added syntax highlighting for blog posts" />
     <MESSAGE value="use localhost for mailing" />
+    <MESSAGE value="lastest posts were in the wrong order" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -858,13 +859,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/site_auth/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/_layouts/main.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -956,6 +950,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/blog/templatetags/post_helpers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="57" selection-start="590" selection-end="590" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/static/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="222" column="28" selection-start="4733" selection-end="4733" vertical-scroll-proportion="0.0">
@@ -963,9 +964,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/blog/templatetags/post_helpers.py">
+    <entry file="file://$PROJECT_DIR$/static/css/post.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="57" selection-start="590" selection-end="590" vertical-scroll-proportion="0.77087796">
+        <state line="5" column="21" selection-start="83" selection-end="83" vertical-scroll-proportion="0.16059957">
           <folding />
         </state>
       </provider>
