@@ -1,8 +1,12 @@
 import os
 import django
 # Django settings for deanproxy project.
+RUN_ENV = 'DJANGO_RUN_ENV'
 
 DEBUG = True
+if os.getenv(RUN_ENV, '') == 'production':
+	# We don't want debug in production, usually.
+	DEBUG = False
 TEMPLATE_DEBUG = DEBUG
 
 ADMINS = (
@@ -15,7 +19,7 @@ SITE_ROOT = os.path.dirname(os.path.realpath(__file__))
 
 MANAGERS = ADMINS
 
-if os.getenv('DJANGO_RUN_ENV', '') == 'production':
+if os.getenv(RUN_ENV, '') == 'production':
 	DATABASES = {
 		'default': {
 			'ENGINE': 'django.db.backends.mysql',
