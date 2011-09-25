@@ -23,5 +23,5 @@ def tags_to_string(tags):
 
 @register.inclusion_tag('blog/_latest_posts.html')
 def latest_posts():
-	posts = Post.objects.order_by('created_at')[:5]
+	posts = Post.objects.order_by('created_at').reverse()[:5]
 	return {'posts':posts}
