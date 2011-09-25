@@ -35,8 +35,3 @@ def existing_post_actions(uri):
 	return html
 
 
-# TODO: Store results in DB. Make model do the work there, tag should only call a method on the model.
-
-
-
-

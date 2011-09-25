@@ -4,6 +4,7 @@ from dateutil.parser import parse
 from django.core.cache import cache
 import urllib2
 import logging
+from django.utils.html import escape
 
 register = template.Library()
 
@@ -44,7 +45,7 @@ def last_commit(project_name):
 		  			<span class="author">by %s</span>
 		  			<time datetime="%s">on %s</time>
 	    		</div>
-	    """ % (commit['message'], commit['committer'], commit['committed_date'],
+	    """ % (escape(commit['message']), escape(commit['committer']), commit['committed_date'],
 			   commit['committed_date'].strftime("%d %b, %Y"))
 
 	return html
