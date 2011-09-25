@@ -24,8 +24,8 @@ def get_latest_commit(project_name):
 	if json:
 		most_recent = json['commits'][0]
 		commit['committed_date'] = parse(most_recent['committed_date'])
-		commit['message'] = most_recent['message']
-		commit['committer'] = most_recent['committer']['name']
+		commit['message'] = escape(most_recent['message'])
+		commit['committer'] = escape(most_recent['committer']['name'])
 
 	return commit
 
@@ -45,7 +45,7 @@ def last_commit(project_name):
 		  			<span class="author">by %s</span>
 		  			<time datetime="%s">on %s</time>
 	    		</div>
-	    """ % (escape(commit['message']), escape(commit['committer']), commit['committed_date'],
+	    """ % (commit['message'], commit['committer'], commit['committed_date'],
 			   commit['committed_date'].strftime("%d %b, %Y"))
 
 	return html
