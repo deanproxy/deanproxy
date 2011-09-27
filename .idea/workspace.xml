@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="076a9f04-3964-468a-a02f-573825526e8f" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/models.py" afterPath="$PROJECT_DIR$/blog/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/tests.py" afterPath="$PROJECT_DIR$/blog/tests.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/css/main.css" afterPath="$PROJECT_DIR$/static/css/main.css" />
     </list>
     <ignored path="deanproxy.iws" />
@@ -85,7 +83,7 @@
       <file leaf-file-name="main.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/static/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="344" column="23" selection-start="6867" selection-end="6867" vertical-scroll-proportion="0.48979592">
+            <state line="252" column="32" selection-start="5301" selection-end="5301" vertical-scroll-proportion="0.36734694">
               <folding />
             </state>
           </provider>
@@ -808,7 +806,7 @@
     <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="true" />
     <option name="DEFAULT_PATCH_EXTENSION" value="patch" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="deciding escaping needed to be elsewhere" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed shading and fixed background image" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -844,6 +842,7 @@
     <MESSAGE value="added padding" />
     <MESSAGE value="some styling" />
     <MESSAGE value="deciding escaping needed to be elsewhere" />
+    <MESSAGE value="changed shading and fixed background image" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -971,7 +970,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/static/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="344" column="23" selection-start="6867" selection-end="6867" vertical-scroll-proportion="0.48979592">
+        <state line="252" column="32" selection-start="5301" selection-end="5301" vertical-scroll-proportion="0.36734694">
           <folding />
         </state>
       </provider>
