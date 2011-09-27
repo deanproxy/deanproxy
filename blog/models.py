@@ -10,8 +10,8 @@ class Tag(models.Model):
 class Post(models.Model):
 	created_at = models.DateTimeField(auto_now_add=True)
 	updated_at = models.DateTimeField(auto_now=True)
-	title = models.CharField(max_length=100)
-	message = models.TextField()
+	title = models.CharField(max_length=100, blank=False)
+	message = models.TextField(blank=False)
 	tags = models.ManyToManyField('Tag')
 
 	def uri(self):
