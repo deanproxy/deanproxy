@@ -219,15 +219,15 @@ nav ul li.search form input:focus {
 	background-color: #fff;
 	width: 700px;
 	padding: 20px;
-	box-shadow: 0 5px 10px #333;
-	-webkit-box-shadow: 0 5px 10px #333;
+	box-shadow: 2px 3px 8px #333;
+	-webkit-box-shadow: 2px 3px 8px #333;
 	border-radius: 5px;
 }
 
 .hoverbox {
 	border-radius: 5px;
-	box-shadow: 0 5px 10px #333;
-	-webkit-box-shadow: 0 5px 10px #333;
+	box-shadow: 2px 3px 8px #333;
+	-webkit-box-shadow: 2px 3px 8px #333;
 	background-color: #fff;
 }
 .errors {
@@ -249,8 +249,8 @@ nav ul li.search form input:focus {
 	padding: 15px;
 	background-color: #fff;
 	border-radius: 5px;
-	box-shadow: 0 5px 10px #333;
-	-webkit-box-shadow: 0 5px 10px #333;
+	box-shadow: 2px 3px 8px #333;
+	-webkit-box-shadow: 2px 3px 8px #333;
 	color: #555;
 	font-size: 14px;
 }
@@ -310,7 +310,7 @@ nav ul li.search form input:focus {
 	top: 25px;
 	left: 25px;
 	width: 100px;
-	box-shadow: 0 5px 5px #333;
+	box-shadow: 2px 3px 5px #333;
 	border-radius: 5px;
 	font-size: 12px;
 	background-color: #dadada;
@@ -342,7 +342,7 @@ nav ul li.search form input:focus {
 	text-align: center;
 	background-color: #ffffff;
 	border-radius: 5px;
-	box-shadow: 0 5px 5px #333;
+	box-shadow: 2px 3px 8px #333;
 	padding: 50px;
 	width: 350px;
 	border: 5px solid #000;
