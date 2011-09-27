@@ -92,7 +92,7 @@
       <file leaf-file-name="main.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/_layouts/main.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="12" selection-start="896" selection-end="896" vertical-scroll-proportion="0.61627907">
+            <state line="26" column="12" selection-start="717" selection-end="717" vertical-scroll-proportion="0.5116279">
               <folding />
             </state>
           </provider>
@@ -970,7 +970,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/_layouts/main.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="12" selection-start="896" selection-end="896" vertical-scroll-proportion="0.61627907">
+        <state line="26" column="12" selection-start="717" selection-end="717" vertical-scroll-proportion="0.5116279">
           <folding />
         </state>
       </provider>
