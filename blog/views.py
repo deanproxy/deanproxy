@@ -5,6 +5,7 @@ from django.http import HttpResponse
 from django.shortcuts import get_object_or_404, render, redirect
 from blog.models import Post, Comment, Tag
 from blog.forms import CommentForm, PostForm
+from django.db.models import Q
 import logging
 
 # Login required decorator. Maybe should be moved out but we only care
@@ -32,7 +33,7 @@ def show_by_tag(request, tag):
 
 def search(request):
 	query = request.GET['query']
-	posts = Post.objects.filter(title__icontains=query, message__icontains=query).order_by('created_at').reverse()
+	posts = Post.objects.filter(Q(title__icontains=query) | Q(message__icontains=query)).order_by('created_at').reverse()
 	return render(request, 'blog/index.html', {'posts':posts})
 
 
