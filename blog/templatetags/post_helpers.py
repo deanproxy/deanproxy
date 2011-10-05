@@ -1,3 +1,4 @@
+import re
 from django import template
 from blog.models import Post
 
@@ -25,3 +26,7 @@ def tags_to_string(tags):
 def latest_posts():
 	posts = Post.objects.order_by('created_at').reverse()[:5]
 	return {'posts':posts}
+
+@register.filter
+def add_html(text):
+	return re.sub(r'(?P<text>.+)(\r\n\r\n|$)', r'<p>\g<text></p>', text)

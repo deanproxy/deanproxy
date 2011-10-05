@@ -82,7 +82,8 @@ def create_comment(request):
 			'A new post has been submitted on the post: %s\r\n\r\nhttp://%s/%s' %
 				(comment.post.title, settings.DOMAIN_NAME, comment.post.uri()),
 			'deanproxy <dean@deanproxy.com>',
-			['dean@deanproxy.com']
+			['dean@deanproxy.com'],
+			fail_silently=True
 		)
 		status = 200
 	return HttpResponse(status=status)

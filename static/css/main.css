@@ -144,7 +144,8 @@ button.important:active {
 	background: url(/static/images/macTexture.png) repeat;
 }
 
-#header nav {
+#header ul {
+	list-style: none;
 	background-color: #dadada;
 	background-image: -webkit-gradient(linear, left top, left bottom, from(#dadada), to(#b1b0b0));
 	background-image: -moz-linear-gradient(top, #dadada, #b1b0b0);
@@ -157,13 +158,11 @@ button.important:active {
 	-webkit-box-shadow: 0 3px 5px #333;
 	border: 1px solid #aaa;
 }
-nav ul {
-	list-style: none;
-}
-nav ul li {
+
+#header ul li {
 	float: left;
 }
-nav ul li a {
+#header ul li a {
 	font-family: Comfortaa, Helvetica, sans-serif;
 	font-size: 16px;
 	display: block;
@@ -177,25 +176,25 @@ nav ul li a {
 	text-decoration: none;
 	text-transform: lowercase;
 }
-nav ul li a span {
+#header ul li a span {
 	color: #0078E1;
 }
-nav ul li a:hover {
+#header ul li a:hover {
 	background-color: #cccccc;
 	color: #e10007;
 }
-nav ul li a.selected {
+#header ul li a.selected {
 	color: #e10007;
 }
-nav ul li.search {
+#header ul li.search {
 	padding:  0 15px 0 15px;
 }
-nav ul li.search form {
+#header ul li.search form {
 	height: 40px;
 	display: block;
 	line-height: 40px;
 }
-nav ul li.search form input {
+#header ul li.search form input {
 	font-size: 12px;
 	padding: 5px 25px 5px 8px;
 	background: url(/static/images/search.png) no-repeat 155px #e4e3e3;
@@ -204,7 +203,7 @@ nav ul li.search form input {
 	width: 145px;
 	color: #999;
 }
-nav ul li.search form input:focus {
+#header ul li.search form input:focus {
 	background-color: #f0efef;
 	color: #555;
 }
@@ -212,7 +211,8 @@ nav ul li.search form input:focus {
 /* Body */
 #content {
 	width: 990px;
-	margin: 65px auto;
+	margin: 0 auto;
+	padding-top: 65px;
 }
 #posts {
 	float: left;
@@ -275,7 +275,6 @@ nav ul li.search form input:focus {
 }
 
 #sidebar .twitter a img {
-	margin-left: 30px;
 	border: 0;
 }
 
