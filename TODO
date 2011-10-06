@@ -1,5 +1,4 @@
-- Create music page
-- Create code page
-- Make settings.py have a development/production environment.
+- Format posting in HTML based on line breaks and certain tags.
+- Do a mobile version of the site that's simple. No sidebar.
 - Do unit tests.
 
