@@ -15,7 +15,7 @@ class Post(models.Model):
 	tags = models.ManyToManyField('Tag')
 
 	def uri(self):
-		title = re.sub('[!@#\$%\^&\*\(\),<>\\\\{}\|\s\[\]\.]', '-', self.title.lower())
+		title = re.sub('[!:;@#\$%\^&\*\(\),<>\\\\{}\|\s\[\]\.]', '-', self.title.lower())
 		return "/blog/posts/%d/%s/%d-%s.html" % (self.created_at.year, self.created_at.strftime("%m"), self.id, title)
 
 

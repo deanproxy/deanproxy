@@ -1,4 +1,6 @@
 - Format posting in HTML based on line breaks and certain tags.
+- Implement "Save" feature for blog post.
+
 - Do a mobile version of the site that's simple. No sidebar.
 - Do unit tests.
 
