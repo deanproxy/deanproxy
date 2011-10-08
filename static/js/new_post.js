@@ -40,9 +40,11 @@
 		})
 		$('textarea').keyup(function() {
 			$('#preview article p').html(converter.makeHtml($(this).val()));
-			$('#preview article p').find('pre code').parent().addClass('prettyprint');
 		});
-		setInterval(prettyPrint, 20000);
+		setInterval(function() {
+			$('#preview article p').find('pre code').parent().addClass('prettyprint');
+			prettyPrint();
+		}, 20000);
 
 		/* Validations */
 		$.validator.addMethod('defaultInput', function(value, element) {
