@@ -30,14 +30,15 @@
 		});
 
 		/* Show how the post looks */
+		var converter = new Attacklab.showdown.converter();
+
 		$('#preview article header h2').html('<a href="#">' + $('input[name=title]').val() + '</a>');
-		$('#preview article p').html($('textarea').val());
+		$('#preview article p').html(converter.makeHtml($('textarea').val()));
 
 		$('input[name=title]').keyup(function() {
 			$('#preview article header h2').html('<a href="#">' + $(this).val() + '</a>');
 		})
 		$('textarea').keyup(function() {
-			var converter = new Attacklab.showdown.converter();
 			$('#preview article p').html(converter.makeHtml($(this).val()));
 			$('#preview article p').find('pre code').parent().addClass('prettyprint');
 		});
