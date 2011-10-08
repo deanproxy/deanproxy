@@ -34,12 +34,14 @@ h3 {
 quote {
 	display:block;
 }
+
 input, textarea {
 	padding: 4px;
-	color: #999;
+	color: #666;
 	border-radius: 5px;
 	font-size: 14px;
 	border: 1px solid #999;
+	text-shadow: 0 1px 0 #fff;
 }
 input:focus, textarea:focus {
 	outline-width: 0;
@@ -345,6 +347,17 @@ button.important:active {
 	padding: 50px;
 	width: 350px;
 	border: 5px solid #000;
+}
+
+form ul li.error span {
+	float: right;
+	margin-left: -20px;
+	border: 1px solid #9d261d;
+	background-color: #FAE5E3;
+	border-radius: 5px;
+	box-shadow: 0 5px 10px #999;
+	padding: 5px;
+	z-index: 150;
 }
 
 

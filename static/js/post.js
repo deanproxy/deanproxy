@@ -79,6 +79,7 @@
 		});
 
 		/* Highlight javascript code */
+		$('#posts article pre code').parent().addClass('prettyprint');
 		prettyPrint();
 	});
 })(jQuery);

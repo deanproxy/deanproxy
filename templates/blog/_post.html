@@ -7,7 +7,7 @@
 		</time>
 		<span>{% total_comments post.comment_set.count %}</span>
 	</header>
-	{{ post.message|safe }}
+	{{ post.html_message|safe }}
 	<footer>
 		Tags: {% tags_to_string post.tags.all %}
 	</footer>

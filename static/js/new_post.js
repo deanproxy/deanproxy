@@ -37,7 +37,9 @@
 			$('#preview article header h2').html('<a href="#">' + $(this).val() + '</a>');
 		})
 		$('textarea').keyup(function() {
-			$('#preview article p').html($(this).val());
+			var converter = new Attacklab.showdown.converter();
+			$('#preview article p').html(converter.makeHtml($(this).val()));
+			$('#preview article p').find('pre code').parent().addClass('prettyprint');
 		});
 		setInterval(prettyPrint, 20000);
 
@@ -46,12 +48,34 @@
 			return this.optional(element) || (value !== '' && value !== 'Title of post' && value !== 'Tags');
 		});
 		$('form[name=post]').validate({
-			errorPlacement: function() { },
+			wrapper: 'span',
+			rules: {
+				title: {
+					minlength: 5,
+					maxlength: 100
+				}
+			},
+			errorPlacement: function(error, element) {
+				if (element.attr('name') != 'message') {
+					error.appendTo(element.parent('li'));
+				}
+			},
 			highlight: function(element, errorClass) {
 				$(element).parent('li').addClass(errorClass);
 			},
 			unhighlight: function(element, errorClass) {
 				$(element).parent('li').removeClass(errorClass);
+			}
+		});
+
+		$('.postHelpers .img').click(function() {
+
+		});
+
+		$('.postHelpers .href').click(function() {
+			var link = prompt('Enter the link');
+			if (link) {
+
 			}
 		});
 	});

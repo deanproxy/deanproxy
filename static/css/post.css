@@ -15,8 +15,11 @@ h2 {
 #posts article header span {
 	float: right;
 }
-#posts article ul {
-	margin-left: 20px;
+#posts article ul, #posts article ol {
+	margin: 0 0 1em 2.5em;
+}
+#posts article pre {
+	margin: 0 0 1em 0;
 }
 #posts header  {
 	font-family: Comfortaa;
@@ -89,4 +92,24 @@ h2 {
 	border: 2px dashed #999;
 	padding: 10px;
 	border-radius: 5px;
+	max-height: 400px;
+	overflow: auto;
 }
+
+.postHelpers {
+	list-style: none;
+}
+.postHelpers li {
+	float: left;
+	padding: 0;
+}
+.postHelpers li a {
+	display: block;
+	padding: 10px;
+	border: 1px solid #fff;
+	font-weight: bold;
+}
+.postHelpers li a:hover {
+	border: 1px solid #e16900;
+}
+

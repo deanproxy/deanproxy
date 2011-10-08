@@ -1,10 +1,11 @@
 {% extends '_layouts/main.html' %}
 {% load helper_tags %}
 {% block head_extras %}
-	{% js 'new_post.js' %}
 	{% js 'prettify.js' %}
 	{% js 'lang-css.js' %}
 	{% js 'lang-sql.js' %}
+	{% js 'showdown.js' %}
+	{% js 'new_post.js' %}
 	{% css 'post.css' %}
 	{% css 'myprettify.css' %}
 {% endblock %}
@@ -25,6 +26,10 @@
 					<input type="text" name="title" class="required defaultInput" value="{{ post.title|default:'Title of post' }}"/>
 				</li>
 				<li>
+					<ul class="postHelpers">
+						<li class="img"><a href="#">img</a></li>
+						<li class="href"><a href="#">href</a></li>
+					</ul>
 					<textarea name="message" class="required">{{ post.message|safe }}</textarea>
 				</li>
 				<li>
