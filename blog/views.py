@@ -24,7 +24,7 @@ def index(request):
 
 def show(request, id):
 	post = get_object_or_404(Post, pk=id)
-	comments = post.comment_set.order_by('created_at').reverse()
+	comments = post.comment_set.order_by('created_at')
 	return render(request, 'blog/show.html', {'post':post, 'comments':comments})
 
 def show_by_tag(request, tag):
@@ -87,6 +87,9 @@ def create_comment(request):
 			fail_silently=True
 		)
 		status = 200
+	else:
+		logging.error(form.errors)
+
 	return HttpResponse(status=status)
 
 @login_required

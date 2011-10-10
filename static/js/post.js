@@ -1,15 +1,8 @@
 (function($) {
-	function prependComment(form) {
-		$('#comments').prepend('<article id="newComment">' + form.message.value +
-				'<footer>Posted by ' + form.name.value + ' less than a second ago</footer></article>');
-		$(window).scrollTo('#newComment', {
-			duration:500,
-			axis:'y',
-			offset: -100,
-			onAfter: function() {
-				$('#newComment').effect('highlight', {}, 1000);
-			}
-		});
+	function appendComment(form) {
+		$('#comments').append('<article id="newComment">' + form.message.value +
+				'<footer>Posted by ' + form.tackle.value + ' less than a second ago</footer></article>');
+		$('#newComment').effect('highlight', {}, 1000);
 	}
 
 	$(document).ready(function() {
@@ -31,16 +24,6 @@
 			return false;
 		});
 
-		$('input[name=name]').focus(function() {
-			if ($(this).val() === 'Your name') {
-				$(this).val('');
-			}
-		}).blur(function() {
-			if ($(this).val() === '') {
-				$(this).val('Your name');
-			}
-		});
-
 		$('#comments article:even').addClass('even');
 
 		$.validator.addMethod('validName', function(value, element) {
@@ -52,7 +35,7 @@
 				li.append('<span>Submitting <img src="/static/images/loading-pacman.gif"/></span>');
 				$.post(form.action, $(form).serialize(), function() {
 					li.html('Thanks for your input!');
-					prependComment(form);
+					appendComment(form);
 					return false;
 				}).error(function() {
 					alert('There was an issue when submitting this comment.');

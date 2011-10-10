@@ -23,7 +23,7 @@
 			{% csrf_token %}
 			<ul>
 				<li>
-					<input type="text" name="title" class="required defaultInput" value="{{ post.title|default:'Title of post' }}"/>
+					<input type="text" name="title" class="required defaultInput" value="{{ post.title }}" placeholder="Title of post"/>
 				</li>
 				<li>
 					<ul class="postHelpers">
@@ -33,7 +33,7 @@
 					<textarea name="message" class="required">{{ post.message|safe }}</textarea>
 				</li>
 				<li>
-					<input type="text" name="tags" class="required defaultInput" value="{{ post.tags.all|join:', '|default:'Tags' }}"/>
+					<input type="text" name="tags" class="required defaultInput" placeholder="Tags" value="{{ post.tags.all|join:', ' }}"/>
 				</li>
 				<li>
 					{% if post.id %}
