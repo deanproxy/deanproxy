@@ -18,3 +18,7 @@
 .lit {
 	color: rgb(51,135,204);
 }
+.com {
+	color: #999;
+	font-style: italic;
+}
