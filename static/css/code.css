@@ -6,9 +6,11 @@
 }
 
 .githubCommit {
-	color: #777;
+	color: #e08a3e;
+}
+.githubCommit .message {
+	font-weight: bold;
 }
 .githubCommit .author, .githubCommit time {
-	color: #999;
 	font-style: italic;
 }

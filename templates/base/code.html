@@ -1,5 +1,5 @@
 {% extends '_layouts/main.html' %}
-{% load github_tags %}
+{% load github %}
 {% load helper_tags %}
 
 {% block head_extras %}
@@ -11,7 +11,7 @@
 		<article>
 			<header>
 				<h3><a href="http://github.com/deanproxy/checkreg">checkreg</a></h3>
-				{% last_commit 'checkreg' %}
+				{% last_commit commits.checkreg %}
 			</header>
 			<p>
 				checkreg is a mobile app that lets you put in expenses.  That's all.  I developed
@@ -35,7 +35,7 @@
 		<article>
 			<header>
 				<h3><a href="http://github.com/deanproxy/eMail">eMail</a></h3>
-				{% last_commit 'email' %}
+				{% last_commit commits.email %}
 			</header>
 			<p>
 				Yes, it's a generic name.  Yes, I have thought about changing it.  Why did I name it this?
@@ -54,7 +54,7 @@
 		<article>
 			<header>
 				<h3><a href="http://github.com/deanproxy/dlib">dlib</a></h3>
-				{% last_commit 'dlib' %}
+				{% last_commit commits.dlib %}
 			</header>
 			<p>
 				dlib is simply a library I use for my C projects. It has stuff like string buffers,

@@ -1,10 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="076a9f04-3964-468a-a02f-573825526e8f" name="Default" comment="">
+    <list default="true" id="076a9f04-3964-468a-a02f-573825526e8f" name="Default" comment="moved github stuff to view">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/base/templatetags/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/base/templatetags/github.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/base/_github.html" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/globaltags/templatetags/github_tags.py" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TODO" afterPath="$PROJECT_DIR$/TODO" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base/views.py" afterPath="$PROJECT_DIR$/base/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logs/django.log" afterPath="$PROJECT_DIR$/logs/django.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/settings.py" afterPath="$PROJECT_DIR$/settings.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/css/code.css" afterPath="$PROJECT_DIR$/static/css/code.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/base/code.html" afterPath="$PROJECT_DIR$/templates/base/code.html" />
     </list>
     <ignored path="deanproxy.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -66,16 +74,34 @@
       <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/base/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="12" column="36" selection-start="338" selection-end="338" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="github_tags.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/globaltags/templatetags/github_tags.py">
+      <file leaf-file-name="code.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/css/code.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="11" column="0" selection-start="154" selection-end="154" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_github.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/base/_github.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="68" selection-start="204" selection-end="204" vertical-scroll-proportion="-1.25">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="code.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/base/code.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="1" column="14" selection-start="49" selection-end="49" vertical-scroll-proportion="-0.625">
               <folding />
             </state>
           </provider>
@@ -90,55 +116,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="forms.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/blog/forms.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="50" selection-start="105" selection-end="105" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TODO" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="TODO" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/TODO">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="76" selection-start="233" selection-end="233" vertical-scroll-proportion="0.0">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="settings.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="settings.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="172" column="32" selection-start="5667" selection-end="5667" vertical-scroll-proportion="0.7599119">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="post.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/js/post.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="43" selection-start="943" selection-end="943" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="myprettify.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/css/myprettify.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="23" selection-start="317" selection-end="317" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="post.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/css/post.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="99" column="21" selection-start="1569" selection-end="1569" vertical-scroll-proportion="0.0">
+            <state line="137" column="30" selection-start="4532" selection-end="4532" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -167,13 +157,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/blog/templatetags/post_helpers.py" />
-        <option value="$PROJECT_DIR$/templates/_layouts/main.html" />
-        <option value="$PROJECT_DIR$/templates/blog/_post.html" />
-        <option value="$PROJECT_DIR$/static/css/post.css" />
-        <option value="$PROJECT_DIR$/static/css/contact.css" />
-        <option value="$PROJECT_DIR$/static/css/main.css" />
-        <option value="$PROJECT_DIR$/blog/models.py" />
         <option value="$PROJECT_DIR$/templates/blog/show.html" />
         <option value="$PROJECT_DIR$/static/js/new_post.js" />
         <option value="$PROJECT_DIR$/templates/blog/edit.html" />
@@ -181,8 +164,15 @@
         <option value="$PROJECT_DIR$/blog/views.py" />
         <option value="$PROJECT_DIR$/static/js/post.js" />
         <option value="$PROJECT_DIR$/static/css/myprettify.css" />
-        <option value="$PROJECT_DIR$/TODO" />
+        <option value="$PROJECT_DIR$/globaltags/templatetags/github_tags.py" />
+        <option value="$PROJECT_DIR$/base/models.py" />
+        <option value="$PROJECT_DIR$/base/templatetags/github.py" />
+        <option value="$PROJECT_DIR$/templates/base/code.html" />
         <option value="$PROJECT_DIR$/settings.py" />
+        <option value="$PROJECT_DIR$/base/views.py" />
+        <option value="$PROJECT_DIR$/templates/base/_github.html" />
+        <option value="$PROJECT_DIR$/static/css/code.css" />
+        <option value="$PROJECT_DIR$/TODO" />
       </list>
     </option>
   </component>
@@ -352,10 +342,6 @@
               <option name="myItemId" value="static" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -496,6 +482,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="base" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="deanproxy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="deanproxy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="base" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templatetags" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -875,6 +879,9 @@
           <url>file://$PROJECT_DIR$/site_auth/views.py</url>
           <line>6</line>
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/globaltags/templatetags/github_tags.py</url>
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
@@ -883,39 +890,9 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/static/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="29" selection-start="635" selection-end="635" vertical-scroll-proportion="-24.807692" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/site_auth/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="66" selection-start="484" selection-end="484" vertical-scroll-proportion="0.44474393" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/contact/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/blog/edit.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="100" selection-start="1130" selection-end="1130" vertical-scroll-proportion="0.82417583" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/js/new_post.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="34" selection-start="448" selection-end="448" vertical-scroll-proportion="0.12195122" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/blog/show.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="48" column="64" selection-start="1363" selection-end="1363" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="54" selection-start="929" selection-end="929" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/blog/forms.py">
@@ -945,28 +922,70 @@
         <state line="23" column="24" selection-start="684" selection-end="684" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/base/views.py">
+    <entry file="file://$PROJECT_DIR$/blog/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+        <state line="26" column="54" selection-start="929" selection-end="929" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/globaltags/templatetags/github_tags.py">
+    <entry file="file://$PROJECT_DIR$/blog/templatetags/post_helpers.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TODO">
+    <entry file="file://$PROJECT_DIR$/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="76" selection-start="233" selection-end="233" vertical-scroll-proportion="0.0">
+        <state line="137" column="30" selection-start="4532" selection-end="4532" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/settings.py">
+    <entry file="file://$PROJECT_DIR$/base/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="172" column="32" selection-start="5667" selection-end="5667" vertical-scroll-proportion="0.7599119">
+        <state line="12" column="36" selection-start="338" selection-end="338" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="18" selection-start="229" selection-end="236" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/base/templatetags/github.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="27" selection-start="154" selection-end="154" vertical-scroll-proportion="0.19271949">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base/code.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="14" selection-start="49" selection-end="49" vertical-scroll-proportion="-0.625">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base/_github.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="68" selection-start="204" selection-end="204" vertical-scroll-proportion="-1.25">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/code.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="0" selection-start="154" selection-end="154" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TODO">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>

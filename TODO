@@ -1,5 +1,3 @@
-- Move github stuff into code view
-
 - Implement "Save" feature for blog post.
 - Add support for uploading images and making markdown once image is done uploading
 - Add support for adding href's that supply markdown once href is added
