@@ -155,13 +155,29 @@ INSTALLED_APPS = (
 LOGGING = {
     'version': 1,
     'disable_existing_loggers': False,
+	'formatters': {
+		'medium': {
+			'format': r'%(levelname)s %(asctime)s %(module)s %(message)s'
+		}
+	},
     'handlers': {
         'mail_admins': {
             'level': 'ERROR',
             'class': 'django.utils.log.AdminEmailHandler'
-        }
+        },
+		'console': {
+			'level': 'DEBUG',
+			'class': 'cloghandler.ConcurrentRotatingFileHandler',
+			'filename': os.path.join(SITE_ROOT, 'logs', 'django.log'),
+			'maxBytes': 16777216,
+			'formatter': 'medium'
+		}
     },
     'loggers': {
+		'django': {
+			'handlers': ['console'],
+			'level': 'DEBUG',
+		},
         'django.request': {
             'handlers': ['mail_admins'],
             'level': 'ERROR',
