@@ -4,11 +4,14 @@
 .music article header {
 	margin-bottom: 5px;
 }
-.music article header time, .music article header span {
-	color: #999;
+.music article header .info {
+	color: #e08a3e;
+}
+.music article header time {
+	font-style: italic;
 }
 .music article header span {
-	float: right;
+	font-weight: bold;
 }
 .music article p {
 	clear: right;
