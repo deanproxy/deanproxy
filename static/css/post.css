@@ -49,6 +49,10 @@ h2 {
 	font-style: italic;
 	color: #999;
 }
+#posts #comments article blockquote {
+	font-style: italic;
+	border-left: 2px solid #e10007;
+}
 
 #comments article footer {
 	color: #999;
