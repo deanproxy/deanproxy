@@ -77,7 +77,9 @@ def destroy(request, id):
 def create_comment(request):
 	status = 500
 	json = '{}'
-	form = CommentForm(request.POST)
+	post = request.POST.copy()
+	post['is_admin'] = request.session.get('logged_in', False)
+	form = CommentForm(post)
 	if form.is_valid():
 		comment = form.save()
 		send_mail(

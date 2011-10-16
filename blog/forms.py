@@ -2,7 +2,6 @@ from django import forms
 from blog.models import Comment, Post, Tag
 
 class CommentForm(forms.ModelForm):
-
 	def is_valid(self):
 		"""
 		 We want to make sure we don't have spammers. They typically search for common fields

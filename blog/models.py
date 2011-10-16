@@ -48,6 +48,7 @@ class Comment(models.Model):
 	created_at = models.DateTimeField(auto_now_add=True)
 	name = models.CharField(max_length=30)
 	message = models.TextField()
+	is_admin = models.BooleanField(default=False, blank=True)
 
 	def save(self, force_insert=False, force_update=False, using=None):
 		' Make sure no HTML is here and also remove some markdown that is not allowed '

@@ -18,12 +18,15 @@
 	<div id="comments">
 		{% if comments.count > 0 %}
 			{% for comment in comments %}
-				<article id="comment-{{ comment.id }}" {% if request.session.logged_in %}class="inPlaceEdit"{% endif %}>
+				<article id="comment-{{ comment.id }}" {% if comment.is_admin %}class="isAdmin"{% endif %}>
 					{{ comment.message|safe }}
 
 					<footer>
-						Posted by {{ comment.name }},
-						on {{ comment.created_at|date:'j M, Y' }}
+						Posted by <span class="name">{{ comment.name }}</span>,
+						on
+						<time datetime="{{ comment.created_at|date:'Y-m-d' }}">
+							{{ comment.created_at|date:'j M, Y' }}
+						</time>
 						{% if request.session.logged_in %}
 							| <a rel="delete" href="{% url blog_comment_delete_url comment.id %}">Delete</a>
 						{% endif %}
