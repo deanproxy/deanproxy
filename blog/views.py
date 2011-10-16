@@ -82,14 +82,15 @@ def create_comment(request):
 	form = CommentForm(post)
 	if form.is_valid():
 		comment = form.save()
-		send_mail(
-			'[deanproxy] New Comment',
-			'A new post has been submitted on the post: %s\r\n\r\nhttp://%s/%s' %
-				(comment.post.title, settings.DOMAIN_NAME, comment.post.uri()),
-			'deanproxy <dean@deanproxy.com>',
-			['dean@deanproxy.com'],
-			fail_silently=True
-		)
+		if not comment.is_admin:
+			send_mail(
+				'[deanproxy] New Comment',
+				'A new post has been submitted on the post: %s\r\n\r\nhttp://%s/%s' %
+					(comment.post.title, settings.DOMAIN_NAME, comment.post.uri()),
+				'deanproxy <dean@deanproxy.com>',
+				['dean@deanproxy.com'],
+				fail_silently=True
+			)
 		json_data = {'name':comment.name, 'message':comment.message}
 		json = simplejson.dumps(json_data)
 		status = 200
