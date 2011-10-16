@@ -1,0 +1,5 @@
+* Added markdown for comments
+* Highlight admin comment when added if logged in
+* Added Next/Prev navigation links to blog post
+* Changed title to display blog post title when viewing blog post
+* Added some unit tests (although I need a lot more)

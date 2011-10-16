@@ -1,21 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="076a9f04-3964-468a-a02f-573825526e8f" name="Default" comment="fixed title to show title of post if showing a post.">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/arrowleft.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/arrowright.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/globaltags/models.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/globaltags/tests.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/globaltags/views.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test.py" />
+    <list default="true" id="076a9f04-3964-468a-a02f-573825526e8f" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CHANGELOG" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/models.py" afterPath="$PROJECT_DIR$/blog/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/globaltags/templatetags/helper_tags.py" afterPath="$PROJECT_DIR$/globaltags/templatetags/helper_tags.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/site_auth/models.py" afterPath="$PROJECT_DIR$/site_auth/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/css/post.css" afterPath="$PROJECT_DIR$/static/css/post.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/js/new_post.js" afterPath="$PROJECT_DIR$/static/js/new_post.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/blog/_post.html" afterPath="$PROJECT_DIR$/templates/blog/_post.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/blog/show.html" afterPath="$PROJECT_DIR$/templates/blog/show.html" />
     </list>
     <ignored path="deanproxy.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -128,10 +116,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="post.css" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="post.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static/css/post.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="53" column="1" selection-start="990" selection-end="990" vertical-scroll-proportion="0.7227926">
+            <state line="47" column="53" selection-start="852" selection-end="852" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TODO" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TODO">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="23" selection-start="642" selection-end="642" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CHANGELOG" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/CHANGELOG">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="52" selection-start="246" selection-end="246" vertical-scroll-proportion="0.12847966">
               <folding />
             </state>
           </provider>
@@ -141,15 +147,6 @@
         <entry file="file://$PROJECT_DIR$/globaltags/templatetags/helper_tags.py">
           <provider selected="true" editor-type-id="text-editor">
             <state line="25" column="75" selection-start="638" selection-end="638" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/blog/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="85" column="13" selection-start="2575" selection-end="2575" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -169,7 +166,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/static/css/code.css" />
         <option value="$PROJECT_DIR$/TODO" />
         <option value="$PROJECT_DIR$/templates/base/music.html" />
         <option value="$PROJECT_DIR$/static/css/music.css" />
@@ -185,6 +181,7 @@
         <option value="$PROJECT_DIR$/static/js/new_post.js" />
         <option value="$PROJECT_DIR$/templates/blog/show.html" />
         <option value="$PROJECT_DIR$/static/css/post.css" />
+        <option value="$PROJECT_DIR$/CHANGELOG" />
       </list>
     </option>
   </component>
@@ -756,9 +753,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1440" height="874" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31746033" sideWeight="0.0" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31746033" sideWeight="0.0" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Phing Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -805,7 +802,7 @@
     <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="true" />
     <option name="DEFAULT_PATCH_EXTENSION" value="patch" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixing up comment style" />
+    <option name="LAST_COMMIT_MESSAGE" value="added prev/next navigation to blog posts." />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -818,7 +815,6 @@
     <option name="UPDATE_GROUP_BY_CHANGELIST" value="false" />
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
-    <MESSAGE value="lastest posts were in the wrong order" />
     <MESSAGE value="added padding" />
     <MESSAGE value="some styling" />
     <MESSAGE value="deciding escaping needed to be elsewhere" />
@@ -843,6 +839,7 @@
     <MESSAGE value="set my name in the comment field if i'm logged in." />
     <MESSAGE value="don't mail me when I submit a comment." />
     <MESSAGE value="fixing up comment style" />
+    <MESSAGE value="added prev/next navigation to blog posts." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -858,27 +855,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file:///Library/Python/2.7/site-packages/django/forms/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="244" column="39" selection-start="9683" selection-end="9683" vertical-scroll-proportion="-4.7494864">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="35" selection-start="104" selection-end="104" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="297" column="5" selection-start="6059" selection-end="6063" vertical-scroll-proportion="0.33188722">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/blog/templatetags/post_helpers.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -965,7 +941,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/static/css/post.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="1" selection-start="990" selection-end="990" vertical-scroll-proportion="0.7227926">
+        <state line="47" column="53" selection-start="852" selection-end="852" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TODO">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="23" selection-start="642" selection-end="642" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="85" column="13" selection-start="2575" selection-end="2575" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CHANGELOG">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="52" selection-start="246" selection-end="246" vertical-scroll-proportion="0.12847966">
           <folding />
         </state>
       </provider>
