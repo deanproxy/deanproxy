@@ -38,15 +38,14 @@ h2 {
 
 #posts #comments article {
 	padding: 10px;
-	border-top: 1px solid #eee;
-	border-bottom:  1px solid #eee;
+	border-top: 1px solid #cccccc;
 	margin: 0;
+}
+#posts #comments article:last-child {
+	border-bottom: 1px solid #cccccc;
 }
 #posts #comments article.isAdmin {
 	background-color: #f7f5a9;
-}
-#posts #comments article:last-child {
-	border-bottom: 1px solid #eee;
 }
 #posts #comments article p em {
 	font-style: italic;
