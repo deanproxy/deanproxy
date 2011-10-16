@@ -13,6 +13,15 @@
 
 {% block content %}
 	{% include 'blog/_post.html' %}
+	<div class="postNavigation">
+		{% if post.prev %}
+			<a class="previous" href="{{ post.prev.uri }}">Prev</a>
+			</a>
+		{% endif %}
+		{% if post.next %}
+			<a class="next" href="{{ post.next.uri }}">Next</a>
+		{% endif %}
+	</div>
 
 	<h3>Comments</h3>
 	<div id="comments">

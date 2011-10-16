@@ -27,6 +27,18 @@ class Post(models.Model):
 		title = re.sub('[!:;@#\$%\^&\*\(\),<>\\\\{}\|\s\[\]\.]', '-', self.title.lower())
 		return "/blog/posts/%d/%s/%d-%s.html" % (self.created_at.year, self.created_at.strftime("%m"), self.id, title)
 
+	def next(self):
+		post = Post.objects.filter(created_at__gt=self.created_at).order_by('created_at')
+		if post:
+			post = post[0]
+		return post
+
+	def prev(self):
+		post = Post.objects.filter(created_at__lt=self.created_at).order_by('created_at').reverse()
+		if post:
+			post = post[0]
+		return post
+
 	def add_tags(self, tag_str):
 		"""
 		 tag_str: 'some, tags, delimited, by, commas'

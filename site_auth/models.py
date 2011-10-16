@@ -31,6 +31,10 @@ class Admin(models.Model):
 		real_password = Admin.make_password(password)
 		return Admin.objects.create(username=username, password=real_password)
 
+	def change_password(self, new_password):
+		self.password = Admin.make_password(new_password)
+		self.save()
+
 	def check_password(self, raw_password):
 		hash = Admin.make_password(raw_password)
 		return hash == self.password

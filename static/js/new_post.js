@@ -7,7 +7,7 @@
 			textarea.val().substr(caretEnd, textarea.val().length);
 		textarea.val(markdown);
 		textarea.get(0).selectionStart = caretStart + 1;
-		textarea.get(0).selectionEnd = caretStart + 15;
+		textarea.get(0).selectionEnd = caretStart + 16;
 	}
 
 

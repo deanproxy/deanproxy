@@ -34,6 +34,24 @@ h2 {
 .leadBlogImage {
 	text-align: center;
 }
+#posts .postNavigation {
+	clear: both;
+	margin-bottom: 30px;
+}
+#posts .postNavigation a {
+	color: #333;
+	font-size: 16px;
+}
+#posts .postNavigation a.previous {
+	background: url(/static/images/arrowleft.png) left no-repeat;
+	padding-left: 28px;
+	float: left;
+}
+#posts .postNavigation a.next {
+	background: url(/static/images/arrowright.png) right no-repeat;
+	padding-right: 28px;
+	float: right;
+}
 
 
 #posts #comments article {
