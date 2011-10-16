@@ -4,6 +4,7 @@
     <list default="true" id="076a9f04-3964-468a-a02f-573825526e8f" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/css/post.css" afterPath="$PROJECT_DIR$/static/css/post.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/blog/show.html" afterPath="$PROJECT_DIR$/templates/blog/show.html" />
     </list>
     <ignored path="deanproxy.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -116,19 +117,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="show.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="show.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/blog/show.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="16" selection-start="613" selection-end="613" vertical-scroll-proportion="5.625">
+            <state line="51" column="42" selection-start="1571" selection-end="1571" vertical-scroll-proportion="0.64794815">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="post.css" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="post.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static/css/post.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="54" column="23" selection-start="969" selection-end="969" vertical-scroll-proportion="0.64681727">
+            <state line="75" column="22" selection-start="1268" selection-end="1268" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -176,12 +177,12 @@
         <option value="$PROJECT_DIR$/TODO" />
         <option value="$PROJECT_DIR$/templates/base/music.html" />
         <option value="$PROJECT_DIR$/static/css/music.css" />
-        <option value="$PROJECT_DIR$/templates/blog/show.html" />
         <option value="$PROJECT_DIR$/blog/models.py" />
         <option value="$PROJECT_DIR$/blog/views.py" />
         <option value="$PROJECT_DIR$/blog/tests.py" />
         <option value="$PROJECT_DIR$/static/js/post.js" />
         <option value="$PROJECT_DIR$/static/css/post.css" />
+        <option value="$PROJECT_DIR$/templates/blog/show.html" />
       </list>
     </option>
   </component>
@@ -951,13 +952,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/blog/show.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="16" selection-start="613" selection-end="613" vertical-scroll-proportion="5.625">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/blog/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="91" column="41" selection-start="2836" selection-end="2836" vertical-scroll-proportion="0.0">
@@ -988,7 +982,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/static/css/post.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="23" selection-start="969" selection-end="969" vertical-scroll-proportion="0.64681727">
+        <state line="75" column="22" selection-start="1268" selection-end="1268" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/blog/show.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="51" column="42" selection-start="1571" selection-end="1571" vertical-scroll-proportion="0.64794815">
           <folding />
         </state>
       </provider>

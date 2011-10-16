@@ -69,6 +69,12 @@ h2 {
 .commentForm ul li {
 	padding: 5px 0 5px 0;
 }
+.commentForm ul li span {
+	color: #999;
+	font-style: italic;
+	font-size: .8em;
+	margin-left: 20px;
+}
 .commentForm ul li label {
 	margin-left: 10px;
 	color: #999;
