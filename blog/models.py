@@ -54,7 +54,7 @@ class Comment(models.Model):
 		' Make sure no HTML is here and also remove some markdown that is not allowed '
 
 		safe_message = re.sub(r'!\[["\'!\.&*#@%\^\-=\{}:/\w\s]*]\([\.:/\w\s]*(?:\s["\'\.!&*#@%\^\-=\{}:/\w\s]*)?\)',
-							  '_Image_Removed_', self.message)
+							  '_[img-removed]_', self.message)
 		self.message = markdown2.markdown(safe_message, safe_mode='escape')
 		super(Comment, self).save(force_insert=force_insert, force_update=force_update, using=using)
 

@@ -42,7 +42,7 @@ That image should be removed
         """
 		markup = """<p>This is going to be markdown.</p>
 
-<p><em>Image_Removed</em></p>
+<p><em>[img-removed]</em></p>
 
 <p>That image should be removed</p>
 """
