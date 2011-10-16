@@ -42,17 +42,17 @@ h2 {
 	border-bottom:  1px solid #eee;
 	margin: 0;
 }
-#posts .comments article:last-child {
+#posts #comments article:last-child {
 	border-bottom: 1px solid #eee;
+}
+#posts #comments article p em {
+	font-style: italic;
+	color: #999;
 }
 
 #comments article footer {
 	color: #999;
 	font-size: 12px;
-}
-#comments article p {
-	margin: 0;
-	padding: 0;
 }
 .commentForm {
 	width: 465px;

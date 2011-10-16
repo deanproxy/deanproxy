@@ -49,4 +49,13 @@ class Comment(models.Model):
 	name = models.CharField(max_length=30)
 	message = models.TextField()
 
+	def save(self, force_insert=False, force_update=False, using=None):
+		' Make sure no HTML is here and also remove some markdown that is not allowed '
+
+		safe_message = re.sub(r'!\[["\'!\.&*#@%\^\-=\{}:/\w\s]*]\([\.:/\w\s]*(?:\s["\'\.!&*#@%\^\-=\{}:/\w\s]*)?\)', '*Image_Removed*', self.message)
+		self.message = markdown2.markdown(safe_message, safe_mode='escape')
+		super(Comment, self).save(force_insert=force_insert, force_update=force_update, using=using)
+
+
+
 

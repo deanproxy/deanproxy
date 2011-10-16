@@ -18,10 +18,9 @@
 	<div id="comments">
 		{% if comments.count > 0 %}
 			{% for comment in comments %}
-				<article id="comment-{{ comment.id }}">
-					<p {% if request.session.logged_in %}class="inPlaceEdit"{% endif %}>
-						{{ comment.message }}
-					</p>
+				<article id="comment-{{ comment.id }}" {% if request.session.logged_in %}class="inPlaceEdit"{% endif %}>
+					{{ comment.message|safe }}
+
 					<footer>
 						Posted by {{ comment.name }},
 						on {{ comment.created_at|date:'j M, Y' }}

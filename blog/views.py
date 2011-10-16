@@ -3,6 +3,7 @@ from django.core.mail import send_mail
 from django.core.urlresolvers import reverse
 from django.http import HttpResponse
 from django.shortcuts import get_object_or_404, render, redirect
+from django.utils import simplejson
 from blog.models import Post, Comment, Tag
 from blog.forms import CommentForm, PostForm
 from django.db.models import Q
@@ -75,6 +76,7 @@ def destroy(request, id):
 
 def create_comment(request):
 	status = 500
+	json = '{}'
 	form = CommentForm(request.POST)
 	if form.is_valid():
 		comment = form.save()
@@ -86,11 +88,13 @@ def create_comment(request):
 			['dean@deanproxy.com'],
 			fail_silently=True
 		)
+		json_data = {'name':comment.name, 'message':comment.message}
+		json = simplejson.dumps(json_data)
 		status = 200
 	else:
 		logging.error(form.errors)
 
-	return HttpResponse(status=status)
+	return HttpResponse(json, status=status, mimetype='application/json', )
 
 @login_required
 def delete_comment(request, id):

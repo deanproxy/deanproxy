@@ -1,7 +1,7 @@
 (function($) {
-	function appendComment(form) {
-		$('#comments').append('<article id="newComment">' + form.message.value +
-				'<footer>Posted by ' + form.tackle.value + ' less than a second ago</footer></article>');
+	function appendComment(data) {
+		$('#comments').append('<article id="newComment">' + data.message +
+				'<footer>Posted by ' + data.name + ' less than a second ago</footer></article>');
 		$('#newComment').effect('highlight', {}, 1000);
 	}
 
@@ -33,9 +33,9 @@
 			submitHandler: function(form) {
 				var li = $('#postComment').hide().parent('li');
 				li.append('<span>Submitting <img src="/static/images/loading-pacman.gif"/></span>');
-				$.post(form.action, $(form).serialize(), function() {
+				$.post(form.action, $(form).serialize(), function(data) {
 					li.html('Thanks for your input!');
-					appendComment(form);
+					appendComment(data);
 					return false;
 				}).error(function() {
 					alert('There was an issue when submitting this comment.');
