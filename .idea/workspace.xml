@@ -4,7 +4,6 @@
     <list default="true" id="076a9f04-3964-468a-a02f-573825526e8f" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/css/post.css" afterPath="$PROJECT_DIR$/static/css/post.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/blog/show.html" afterPath="$PROJECT_DIR$/templates/blog/show.html" />
     </list>
     <ignored path="deanproxy.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -117,19 +116,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="show.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="show.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/blog/show.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="51" column="42" selection-start="1571" selection-end="1571" vertical-scroll-proportion="0.64794815">
+            <state line="51" column="42" selection-start="1571" selection-end="1571" vertical-scroll-proportion="-12.5">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="post.css" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="post.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/static/css/post.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="75" column="22" selection-start="1268" selection-end="1268" vertical-scroll-proportion="0.0">
+            <state line="79" column="118" selection-start="1331" selection-end="1331" vertical-scroll-proportion="0.8316222">
               <folding />
             </state>
           </provider>
@@ -181,8 +180,8 @@
         <option value="$PROJECT_DIR$/blog/views.py" />
         <option value="$PROJECT_DIR$/blog/tests.py" />
         <option value="$PROJECT_DIR$/static/js/post.js" />
-        <option value="$PROJECT_DIR$/static/css/post.css" />
         <option value="$PROJECT_DIR$/templates/blog/show.html" />
+        <option value="$PROJECT_DIR$/static/css/post.css" />
       </list>
     </option>
   </component>
@@ -821,7 +820,7 @@
     <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="true" />
     <option name="DEFAULT_PATCH_EXTENSION" value="patch" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed blockquote in comments" />
+    <option name="LAST_COMMIT_MESSAGE" value="added message for markdown" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -834,7 +833,6 @@
     <option name="UPDATE_GROUP_BY_CHANGELIST" value="false" />
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
-    <MESSAGE value="music links didn't work" />
     <MESSAGE value="added error pages" />
     <MESSAGE value="added error images" />
     <MESSAGE value="added syntax highlighting for blog posts" />
@@ -859,6 +857,7 @@
     <MESSAGE value="changed coloring on music page a bit." />
     <MESSAGE value="allowing markdown (minus images) for comments." />
     <MESSAGE value="fixed blockquote in comments" />
+    <MESSAGE value="added message for markdown" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -980,16 +979,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/post.css">
+    <entry file="file://$PROJECT_DIR$/templates/blog/show.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="75" column="22" selection-start="1268" selection-end="1268" vertical-scroll-proportion="0.0">
+        <state line="51" column="42" selection-start="1571" selection-end="1571" vertical-scroll-proportion="-12.5">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/blog/show.html">
+    <entry file="file://$PROJECT_DIR$/static/css/post.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="42" selection-start="1571" selection-end="1571" vertical-scroll-proportion="0.64794815">
+        <state line="79" column="118" selection-start="1331" selection-end="1331" vertical-scroll-proportion="0.8316222">
           <folding />
         </state>
       </provider>
