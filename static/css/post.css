@@ -52,6 +52,7 @@ h2 {
 #posts #comments article blockquote {
 	font-style: italic;
 	border-left: 2px solid #e10007;
+	padding-left: 10px;
 }
 
 #comments article footer {
