@@ -48,7 +48,8 @@
 			<input type="hidden" name="post" value="{{ post.id }}"/>
 			<ul>
 				<li>
-					<input type="text" name="tackle" placeholder="Your Name" class="required validName"/>
+					<input type="text" name="tackle" placeholder="Your Name" class="required validName"
+						value="{% if request.session.logged_in %}dean{% endif %}"/>
 					<input type="hidden" name="name" value="Stupid Spammers"/>
 					<span>
 						<a href="http://daringfireball.net/projects/markdown/syntax">Markdown</a>
