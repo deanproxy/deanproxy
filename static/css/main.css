@@ -77,10 +77,13 @@ form ul li.error input, form ul li.error textarea {
 	background-color: #FAE5E3;
 }
 button {
-	color: #333;
+	color: #555;
 	padding: 5px 14px 6px;
 	font-size: 13px;
-	border: 1px solid #999;
+	border: 1px solid #ccc;
+	border-bottom-color: #aaa;
+	font-weight: bold;
+	text-shadow: 0 1px 0 #fff;
 	background-image: -webkit-linear-gradient(top, #ffffff, #e6e6e6);
 	background-image: -moz-linear-gradient(top, #ffffff, #e6e6e6);
 	background-image: -ms-linear-gradient(top, #ffffff, #e6e6e6);
@@ -88,6 +91,8 @@ button {
 }
 button:hover {
 	cursor: pointer;
+	border: 1px solid #aaa;
+	border-bottom-color: #999;
 	background-image: -webkit-linear-gradient(top, #e6e6e6, #d1d0d0);
 	background-image: -moz-linear-gradient(top, #e6e6e6, #d1d0d0);
 	background-image: -ms-linear-gradient(top, #e6e6e6, #d1d0d0);
@@ -103,6 +108,7 @@ button.primary {
 	font-size: 13px;
 	border: 1px solid #999;
 	text-shadow: 0 1px 0 #999;
+	font-weight: normal;
 	background-image: -webkit-linear-gradient(top, #049cdb, #0064cd);
 	background-image: -moz-linear-gradient(top, #049cdb, #0064cd);
 	border-radius: 5px;
@@ -124,6 +130,7 @@ button.important {
 	background-image: -moz-linear-gradient(top, #ee5f5b, #c43c35);
 	background-image: -ms-linear-gradient(top, #ee5f5b, #c43c35);
 	color: #fff;
+	font-weight: normal;
 	text-shadow: 0 1px 0 #999;
 }
 button.important:hover {
