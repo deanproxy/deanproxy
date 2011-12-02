@@ -104,6 +104,9 @@ h2 {
 .commentForm ul li input[type=text] {
 	width: 270px;
 }
+.commentForm .stoopidSpammers {
+	display: none;
+}	
 .commentForm ul li:last-child {
 	text-align: right;
 }
