@@ -9,15 +9,18 @@ class CommentForm(forms.ModelForm):
 		 with the common name in it. If that hidden field is altered, it's very probable that
 		 we have a spammer and therefore validation should fail.
 		"""
-		is_good = super(CommentForm, self).is_valid()
+		is_good = False
 		tackle = self.data['tackle'].strip()
 		if self.cleaned_data.get('name', '') != '':
 			self._errors['name'] = self.error_class(['Spammers are not allowed'])
-			is_good = False
 		if not tackle or tackle == 'Your name':
 			self._errors['name'] = self.error_class(['Enter your name'])
-			is_good = False
-
+		else:
+			self.data['name'] = tackle
+			is_good = True
+			
+		if is_good:
+			is_good = super(CommentForm, self).is_valid()
 		return is_good
 
 
