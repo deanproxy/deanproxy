@@ -11,7 +11,7 @@ class CommentForm(forms.ModelForm):
 		"""
 		is_good = False
 		tackle = self.data['tackle'].strip()
-		if self.cleaned_data.get('name', '') != '':
+		if self.data.get('name', '') != '':
 			self._errors['name'] = self.error_class(['Spammers are not allowed'])
 		if not tackle or tackle == 'Your name':
 			self._errors['name'] = self.error_class(['Enter your name'])
