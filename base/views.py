@@ -10,7 +10,7 @@ def code(request):
 	cached_key = 'git-projects'
 	commits = cache.get(cached_key)
 	if not commits:
-		commits = get_latest_commit('email', 'dlib', 'checkreg')
+		commits = get_latest_commit('MacDroidSync', 'email', 'dlib', 'checkreg')
 		cache.set(cached_key, commits, 300)
 
 	return render(request, 'base/code.html', {'commits':commits})
