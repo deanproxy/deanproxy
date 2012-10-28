@@ -40,7 +40,7 @@ def get_latest_commit(*project_names):
             log.error('An HTTPError was raised: %s' % error)
 
         if json:
-            most_recent = json[0]
+            most_recent = json[0]['commit']
             commits[project] = {}
             commits[project]['committed_date'] = parse(most_recent['committer']['date'])
             commits[project]['message'] = most_recent['message']
