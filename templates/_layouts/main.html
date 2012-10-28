@@ -5,8 +5,8 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-	<title>{% title request.path %} - [deanproxy] packaged me.</title> 
-  {% js 'jquery-1.6.2.min.js' %}
+{#	<title>{% title request.path %} - [deanproxy] packaged me.</title>#}
+    {% js 'jquery-1.6.2.min.js' %}
 	{% js 'jquery.validate.min.js' %}
 	{% js 'jquery-ui-1.8.16.custom.min.js' %}
 	{% js 'jquery.lightbox_me.js' %}
@@ -32,6 +32,36 @@
 	</script>
 </head>
 <body>
+	<div id="msie">
+		<img src="/static/images/zap.jpg"/>
+		<h3>Your browser is unsupported and squishy.</h3>
+		<p>
+			Captains log; This site was designed for the future of science! If you can't update your browser,
+			this site just won't function or look right. However, feel free to browse it anyway.  Where's Kif?
+		</p>
+		<p><button id="ok" class="primary">Ok, Whatever</button></p>
+	</div>
+	<div id="header">
+		<nav>
+			<ul>
+				<li>
+					<a href="/">
+						<span>dean</span>proxy
+					</a>
+				</li>
+				<li><a href="{% url code_url %}">Code</a></li>
+				<li><a href="{% url music_url %}">Music</a></li>
+				<li><a href="{% url about_url %}">About</a></li>
+				<li><a href="{% url contact_url %}">Contact</a></li>
+				<li class="search">
+					<form action="{% url blog_search_url %}" name="search" method="get">
+						<input type="text" name="query" value="Search"/>
+					</form>
+				</li>
+			</ul>
+		</nav>
+	</div>
+
 	<div id="content">
 		<div id="posts">
 			{% block content %} {% endblock %}
@@ -69,35 +99,5 @@
 			</ul>
 		</div>
 	{% endif %}
-	<div id="msie">
-		<img src="/static/images/zap.jpg"/>
-		<h3>Your browser is unsupported and squishy.</h3>
-		<p>
-			Captains log; This site was designed for the future of science! If you can't update your browser,
-			this site just won't function or look right. However, feel free to browse it anyway.  Where's Kif?
-		</p>
-		<p><button id="ok" class="primary">Ok, Whatever</button></p>
-	</div>
-	<div id="header">
-		<nav>
-			<ul>
-				<li>
-					<a href="/">
-						<span>dean</span>proxy
-					</a>
-				</li>
-				<li><a href="{% url code_url %}">Code</a></li>
-				<li><a href="{% url music_url %}">Music</a></li>
-				<li><a href="{% url about_url %}">About</a></li>
-				<li><a href="{% url contact_url %}">Contact</a></li>
-				<li class="search">
-					<form action="{% url blog_search_url %}" name="search" method="get">
-						<input type="text" name="query" value="Search"/>
-					</form>
-				</li>
-			</ul>
-		</nav>
-	</div>
-
 </body>
 </html>

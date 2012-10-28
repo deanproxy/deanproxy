@@ -3,83 +3,67 @@
 {% load helper_tags %}
 
 {% block head_extras %}
-{% css 'code.css' %}
+	{% css 'code.css' %}
 {% endblock %}
 {% block content %}
-<div class="code">
-  <h2>Code</h2>
-  <article>
-  <header>
-  <h3><a href="http://github.com/deanproxy/MacDroidSync">MacDroid Sync</a></h3>
-  {% last_commit commits.MacDroidSync %}
-  </header>
-  <p>
-    This is a project that I'm starting to make it easier for me to sync iTunes on my 
-    Mac with my Android phone. Sure, other projects exist for this, but they're either 
-    expensive or they don't work very well (or both). I want to make a free, open source 
-    version that is simple to use, syncs your playlists and tracks both ways and I can use it myself!
-  </p>
-  <p>
-    I may, at some point, create a GUI version and put it on the Android store for cheap, 
-    but the script that resides here will always be free and open source.'
-  </p>
-  </article>
-  <article>
-  <header>
-  <h3><a href="http://github.com/deanproxy/checkreg">checkreg</a></h3>
-  {% last_commit commits.checkreg %}
-  </header>
-  <p>
-    checkreg is a mobile app that lets you put in expenses.  That's all.  I developed
-    it because my wife and I are have been known to spend a little too much money and
-    we wanted a way to track what we have spent.  You would usually use a check registry
-    for this, but what happens when she's out shopping and spending money and I'm at home
-    and have a sudden hankering for a new programming book on Amazon.com or a new track
-    on Beatport?!  I need to see if she's spent too much money in real-time!  checkreg
-    to the rescue.  Although you do have to update it every time you make a purchase by
-    putting your purchase in, this allows us to track how much money is in our checking
-    account at any given time and watch what we have spent.  I plan on playing around
-    with this application more in the near future.
-  </p>
-  <p>
-    I'm basically using django for the backend and jQuery mobile for the front end. I
-    recently switch to jQuery mobile after using jQtouch in and effort to make the
-    project a little more modularized.  I have noticed it's a bit slower right now
-    and a little more quirky, but I plan on finding ways to fix that up.
-  </p>
-  </article>
-  <article>
-  <header>
-  <h3><a href="http://github.com/deanproxy/eMail">eMail</a></h3>
-  {% last_commit commits.email %}
-  </header>
-  <p>
-    Yes, it's a generic name.  Yes, I have thought about changing it.  Why did I name it this?
-    Because.  At the time, I was sick of obscure names for command line arguments. In hindsight,
-    it makes sense to name it something simple, yet unique.
-  </p>
-  <p>
-    What is it? It's a command line SMTP client that support TLS, SMTP AUTH, Attachments,
-    encryption with GPG and some other basic features.  It was created originally to be
-    a very simple SMTP client for mailing reports by a nightly crontab. It has grown a bit,
-    but has stayed pretty simple.  It's written in C and depends on my own C library called
-    dlib. I don't code on this project as much as I used to, but I still do keep it up to
-    date by fixing bugs and doing the occasional feature enhancement.
-  </p>
-  </article>
-  <article>
-  <header>
-  <h3><a href="http://github.com/deanproxy/dlib">dlib</a></h3>
-  {% last_commit commits.dlib %}
-  </header>
-  <p>
-    dlib is simply a library I use for my C projects. It has stuff like string buffers,
-    linked lists, vectors, hash tables and some basic network type functions. It's
-    all utility type stuff.  I originally wrote it to accompany eMail.  However, I
-    have used it in some other projects that I have not published and died quickly. There
-    isn't too much activity on this project.
-  </p>
-  </article>
+	<div class="code">
+		<h2>Code</h2>
+		<article>
+			<header>
+				<h3><a href="http://github.com/deanproxy/checkreg">checkreg</a></h3>
+				{% last_commit commits.checkreg %}
+			</header>
+			<p>
+				checkreg is a mobile app that lets you put in expenses.  That's all.  I developed
+				it because my wife and I are have been known to spend a little too much money and
+				we wanted a way to track what we have spent.  You would usually use a check registry
+				for this, but what happens when she's out shopping and spending money and I'm at home
+				and have a sudden hankering for a new programming book on Amazon.com or a new track
+				on Beatport?!  I need to see if she's spent too much money in real-time!  checkreg
+				to the rescue.  Although you do have to update it every time you make a purchase by
+				putting your purchase in, this allows us to track how much money is in our checking
+				account at any given time and watch what we have spent.  I plan on playing around
+				with this application more in the near future.
+			</p>
+			<p>
+				I'm basically using django for the backend and jQuery mobile for the front end. I
+				recently switch to jQuery mobile after using jQtouch in and effort to make the
+				project a little more modularized.  I have noticed it's a bit slower right now
+				and a little more quirky, but I plan on finding ways to fix that up.
+			</p>
+		</article>
+		<article>
+			<header>
+				<h3><a href="http://github.com/deanproxy/eMail">eMail</a></h3>
+				{% last_commit commits.email %}
+			</header>
+			<p>
+				Yes, it's a generic name.  Yes, I have thought about changing it.  Why did I name it this?
+				Because.  At the time, I was sick of obscure names for command line arguments. In hindsight,
+				it makes sense to name it something simple, yet unique.
+			</p>
+			<p>
+				What is it? It's a command line SMTP client that support TLS, SMTP AUTH, Attachments,
+				encryption with GPG and some other basic features.  It was created originally to be
+				a very simple SMTP client for mailing reports by a nightly crontab. It has grown a bit,
+				but has stayed pretty simple.  It's written in C and depends on my own C library called
+				dlib. I don't code on this project as much as I used to, but I still do keep it up to
+				date by fixing bugs and doing the occasional feature enhancement.
+			</p>
+		</article>
+		<article>
+			<header>
+				<h3><a href="http://github.com/deanproxy/dlib">dlib</a></h3>
+				{% last_commit commits.dlib %}
+			</header>
+			<p>
+				dlib is simply a library I use for my C projects. It has stuff like string buffers,
+				linked lists, vectors, hash tables and some basic network type functions. It's
+				all utility type stuff.  I originally wrote it to accompany eMail.  However, I
+				have used it in some other projects that I have not published and died quickly. There
+				isn't too much activity on this project.
+			</p>
+		</article>
 
-</div>
+	</div>
 {% endblock %}

@@ -13,7 +13,7 @@ def twitter(username):
 	if not tweets:
 		tweets = []
 		try:
-			url = urllib2.urlopen('http://twitter.com/statuses/user_timeline.json?screen_name=%s&include_rts=true&trim_user=true' % username)
+			url = urllib2.urlopen('https://api.twitter.com/1/statuses/user_timeline.json?screen_name=%s&count=3&include_entities=true' % username)
 			data = url.read()
 			json = simplejson.loads(data)
 		except ValueError:

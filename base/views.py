@@ -13,7 +13,7 @@ def code(request):
     commits = cache.get(cached_key)
     commits = None
     if not commits:
-        commits = get_latest_commit('MacDroidSync', 'email', 'dlib', 'checkreg')
+        commits = get_latest_commit('email', 'dlib', 'checkreg')
         cache.set(cached_key, commits, 300)
 
     return render(request, 'base/code.html', {'commits':commits})
@@ -29,7 +29,7 @@ def get_latest_commit(*project_names):
     for project in project_names:
         json = None
         try:
-            url = urllib2.urlopen('http://github.com/api/v2/json/commits/list/deanproxy/%s/master' % project)
+            url = urllib2.urlopen('https://api.github.com/repos/deanproxy/%s/commits' % project)
             data = url.read()
             json = simplejson.loads(data)
         except ValueError:
@@ -40,9 +40,9 @@ def get_latest_commit(*project_names):
             log.error('An HTTPError was raised: %s' % error)
 
         if json:
-            most_recent = json['commits'][0]
+            most_recent = json[0]
             commits[project] = {}
-            commits[project]['committed_date'] = parse(most_recent['committed_date'])
+            commits[project]['committed_date'] = parse(most_recent['committer']['date'])
             commits[project]['message'] = most_recent['message']
             commits[project]['committer'] = most_recent['committer']['name']
 
