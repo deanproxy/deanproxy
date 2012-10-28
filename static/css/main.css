@@ -8,6 +8,9 @@ body {
 	background: url(/static/images/macTexture.png) repeat fixed;
 	color: #444;
 }
+hr {
+    margin-bottom: 1em;
+}
 p {
 	margin-bottom: 1em;
 }
