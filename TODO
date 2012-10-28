@@ -1,6 +1,7 @@
 - Implement "Save" feature for blog post.
 - Add support for uploading images and making markdown once image is done uploading
 - Add support for adding href's that supply markdown once href is added
+- Add UNICODE support.
 
 - Do a mobile version of the site that's simple. No sidebar.
 - Do unit tests.
@@ -11,5 +12,7 @@ KNOWN BUGS:
   the post at this point, and the page is trying to call post.tags.all.  This needs
   to be fixed, as well as display what errors happened in validation. Don't just
   depend on javascript.
+- UNICODE characters aren't handled when saving to the database.  Figure out a way to
+  fix that.
 
 
