@@ -3,11 +3,11 @@ from django.core.mail import send_mail
 from django.core.urlresolvers import reverse
 from django.http import HttpResponse
 from django.shortcuts import get_object_or_404, render, redirect
-from django.utils import simplejson
 from blog.models import Post, Comment, Tag
 from blog.forms import CommentForm, PostForm
 from django.db.models import Q
 import logging
+import json
 
 # Login required decorator. Maybe should be moved out but we only care
 # about it in the blog stuff right now.
@@ -92,7 +92,7 @@ def create_comment(request):
 				fail_silently=True
 			)
 		json_data = {'name':comment.name, 'message':comment.message}
-		json = simplejson.dumps(json_data)
+		json = json.dumps(json_data)
 		status = 200
 	else:
 		logging.error(form.errors)

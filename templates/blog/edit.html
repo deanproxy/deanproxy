@@ -14,11 +14,11 @@
 	<div class="editPost">
 		{% if post.id %}
 			<h2>Edit Post</h2>
-			<form name="post" action="{% url blog_post_update_url post.id %}" method="post">
+			<form name="post" action="{% url 'blog_post_update_url' post.id %}" method="post">
 				<input type="hidden" id="postId" value="{{ post.id }}"/>
 		{% else %}
 			<h2>Create New Post</h2>
-			<form name="post" action="{% url blog_post_create_url %}" method="post">
+			<form name="post" action="{% url 'blog_post_create_url' %}" method="post">
 		{% endif %}
 			{% csrf_token %}
 			<ul>

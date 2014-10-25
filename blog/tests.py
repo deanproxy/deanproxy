@@ -6,10 +6,10 @@ Replace this with more appropriate tests for your application.
 """
 
 from django.test import TestCase
-from django.utils import simplejson
 from blog.models import Post
 from blog.models import Comment
 from django.test.client import Client
+import json
 
 class PostTests(TestCase):
 	client = Client()
@@ -28,7 +28,7 @@ class PostTests(TestCase):
 		post = Post.objects.create(title='Test', message='test')
 		response = self.client.post('/blog/comments/create/', {'post':post.id, 'name':'Stupid Spammers', 'tackle':'Dean', 'message':'Hello, Mr. Ed'})
 		self.assertEqual(response['Content-Type'], 'application/json')
-		json = simplejson.loads(response.content)
+		json = json.loads(response.content)
 		self.assertEqual(json['name'], 'Dean')
 		self.assertEqual(json['message'], '<p>Hello, Mr. Ed</p>\n')
 

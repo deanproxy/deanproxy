@@ -19,7 +19,7 @@
 		<p>
 			I'm a software engineer by profession.  I am a geek by hobby. I spend large sums of time
 			playing with new programming languages and learning about writing good quality code. I do
-			have many other interest though... I play guitar, do <a href="{% url music_url %}">DJ Mix Sets</a>,
+			have many other interest though... I play guitar, do <a href="{% url 'music_url' %}">DJ Mix Sets</a>,
 			I love to go whitewater kayaking, I practice martial arts - specifically Muay Thai and
 			Brazillian Jiu Jitsu (although I've been slack on that lately) and I love mountain biking.
 		</p>
@@ -42,8 +42,8 @@
 		</p>
 		<p>
 			The site will basically hold ramblings from me, code snippets, and host by
-			<a href="{% url code_url %}">coding projects</a>, <a href="{% url music_url %}">random music</a> and
-			other things.  If you'd like, <a href="{% url contact_url %}">let me know what's up.</a>
+			<a href="{% url 'code_url' %}">coding projects</a>, <a href="{% url 'music_url' %}">random music</a> and
+			other things.  If you'd like, <a href="{% url 'contact_url'' %}">let me know what's up.</a>
 		</p>
 	</div>
 {% endblock %}
