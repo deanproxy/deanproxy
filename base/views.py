@@ -1,10 +1,10 @@
 from django.http import HttpResponse
 from django.shortcuts import render
-from django.utils import simplejson
 from dateutil.parser import parse
 from django.core.cache import cache
 import urllib2
 import logging
+import json
 
 log = logging.getLogger('django')
 
@@ -31,7 +31,7 @@ def get_latest_commit(*project_names):
         try:
             url = urllib2.urlopen('https://api.github.com/repos/deanproxy/%s/commits' % project)
             data = url.read()
-            json = simplejson.loads(data)
+            json = json.loads(data)
         except ValueError:
             log.error('There was a problem parsing JSON data: %s' % json)
         except urllib2.URLError, error:

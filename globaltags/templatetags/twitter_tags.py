@@ -1,9 +1,9 @@
 from django import template
-from django.utils import simplejson
 from dateutil.parser import parse
 from django.core.cache import cache
 import urllib2
 import logging
+import json
 
 register = template.Library()
 
@@ -15,7 +15,7 @@ def twitter(username):
 		try:
 			url = urllib2.urlopen('https://api.twitter.com/1/statuses/user_timeline.json?screen_name=%s&count=3&include_entities=true' % username)
 			data = url.read()
-			json = simplejson.loads(data)
+			json = json.loads(data)
 		except ValueError:
 			logging.error('There was a problem parsing JSON data: %s' % json)
 		except urllib2.URLError, error:

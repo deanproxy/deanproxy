@@ -1,4 +1,4 @@
-from django.conf.urls.defaults import patterns, url
+from django.conf.urls import patterns, url
 
 urlpatterns = patterns('',
 	url(r'^$', 'site_auth.views.index', name='auth_page_url'),

@@ -8,7 +8,7 @@
 {% block content %}
 <div class="contact">
 	<h2>Contact Me</h2>
-	<form name="contact" method="post" action="{% url contact_send_url %}">
+	<form name="contact" method="post" action="{% url 'contact_send_url' %}">
 		{% csrf_token %}
 		<ul>
 			<li>
