@@ -8,7 +8,7 @@ from django.conf import settings
 urlpatterns = patterns('',
     # Examples:
     url(r'^$', 'blog.views.index'),
-	url(r'^static/(?P<path>.*)$', 'django.views.static.serve', {'document_root': settings.STATIC_ROOT}),
+    url(r'^static/(?P<path>.*)$', 'django.views.static.serve', {'document_root': settings.STATIC_ROOT}),
     # url(r'^deanproxy/', include('deanproxy.foo.urls')),
 
     # Uncomment the admin/doc line below to enable admin documentation:
