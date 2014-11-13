@@ -24,7 +24,7 @@ class Post(models.Model):
 		super(Post, self).save(force_insert, force_update, using)
 
 	def uri(self):
-		title = re.sub('[!:;@#\$%\^&\*\(\),<>\\\\{}\|\s\[\]\.\']', '-', self.title.lower())
+		title = re.sub('[!:;@#\$%\^&\*\(\),<>\\\\{}\|\s\[\]\.\'\?]', '-', self.title.lower())
 		return "/blog/posts/%d/%s/%d-%s.html" % (self.created_at.year, self.created_at.strftime("%m"), self.id, title)
 
 	def next(self):
