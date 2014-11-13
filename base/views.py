@@ -27,11 +27,11 @@ def music(request):
 def get_latest_commit(*project_names):
     commits = {}
     for project in project_names:
-        json = None
+        json_str = None
         try:
             url = urllib2.urlopen('https://api.github.com/repos/deanproxy/%s/commits' % project)
             data = url.read()
-            json = json.loads(data)
+            json_str = json.loads(data)
         except ValueError:
             log.error('There was a problem parsing JSON data: %s' % json)
         except urllib2.URLError, error:
@@ -39,8 +39,8 @@ def get_latest_commit(*project_names):
         except urllib2.HTTPError, error:
             log.error('An HTTPError was raised: %s' % error)
 
-        if json:
-            most_recent = json[0]['commit']
+        if json_str:
+            most_recent = json_str[0]['commit']
             commits[project] = {}
             commits[project]['committed_date'] = parse(most_recent['committer']['date'])
             commits[project]['message'] = most_recent['message']
