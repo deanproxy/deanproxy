@@ -23,24 +23,24 @@
 			{% csrf_token %}
 			<ul>
 				<li>
-					<input type="text" name="title" class="required defaultInput" value="{{ post.title }}" placeholder="Title of post"/>
+					<input type="text" tabindex="1" name="title" class="required defaultInput" value="{{ post.title }}" placeholder="Title of post"/>
 				</li>
 				<li>
 					<ul class="postHelpers">
 						<li class="img"><a href="#">img</a></li>
 						<li class="href"><a href="#">href</a></li>
 					</ul>
-					<textarea name="message" class="required">{{ post.message|safe }}</textarea>
+					<textarea tabindex="2" name="message" class="required">{{ post.message|safe }}</textarea>
 				</li>
 				<li>
-					<input type="text" name="tags" class="required defaultInput" placeholder="Tags" value="{{ post.tags.all|join:', ' }}"/>
+					<input type="text" tabindex="3" name="tags" class="required defaultInput" placeholder="Tags" value="{{ post.tags.all|join:', ' }}"/>
 				</li>
 				<li>
 					{% if post.id %}
-						<button class="primary">Update this post</button>
-						<button class="cancel important" id="delete">Delete this post</button>
+						<button class="primary" tabindex="4">Update this post</button>
+						<button class="cancel important" tabindex="5" id="delete">Delete this post</button>
 					{% else %}
-						<button class="primary">Create new post</button>
+						<button class="primary" tabindex="4">Create new post</button>
 					{% endif %}
 				</li>
 			</ul>
