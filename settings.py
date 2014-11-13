@@ -6,7 +6,7 @@ RUN_ENV = 'DJANGO_RUN_ENV'
 DEBUG = True
 if os.getenv(RUN_ENV, '') == 'production':
 	# We don't want debug in production, usually.
-	DEBUG = True
+	DEBUG = False
 TEMPLATE_DEBUG = DEBUG
 
 ADMINS = (
@@ -92,6 +92,7 @@ STATICFILES_DIRS = (
     # Put strings here, like "/home/html/static" or "C:/www/django/static".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
+    os.path.join(SITE_ROOT, 'globalstatic'),
 )
 
 # List of finder classes that know how to find static files in
@@ -120,7 +121,7 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.common.CommonMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
-#    'django.contrib.auth.middleware.AuthenticationMiddleware',
+    'django.contrib.auth.middleware.AuthenticationMiddleware',
 #    'django.contrib.messages.middleware.MessageMiddleware',
 )
 
@@ -131,11 +132,16 @@ TEMPLATE_DIRS = (
 )
 
 INSTALLED_APPS = (
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.sites',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
 	'globaltags',
 	'blog',
 	'site_auth',
 	'base',
-    'django.contrib.sessions',
 )
 
 
