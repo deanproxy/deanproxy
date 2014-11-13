@@ -1,0 +1,151 @@
+h2 {
+	border-bottom: none;
+	margin-bottom: 0;
+}
+#posts article {
+	padding-bottom: 20px;
+}
+#posts article:last-child {
+	border-bottom: 0;
+}
+#posts article header time, #content header span {
+	color: #999;
+	font-size: .9em;
+}
+#posts article header span {
+	float: right;
+}
+#posts article ul, #posts article ol {
+	margin: 0 0 1em 2.5em;
+}
+#posts article pre {
+	margin: 0 0 1em 0;
+}
+#posts header  {
+	font-family: Comfortaa;
+	border-bottom: 1px solid #eee;
+	padding-bottom: 5px;
+	margin-bottom: 5px;
+}
+#posts article footer {
+	font-size: 14px;
+	color: #999;
+}
+.leadBlogImage {
+	text-align: center;
+}
+#posts .postNavigation {
+	clear: both;
+	margin-bottom: 30px;
+}
+#posts .postNavigation a {
+	color: #333;
+	font-size: 16px;
+}
+#posts .postNavigation a.previous {
+	background: url(/static/images/arrowleft.png) left no-repeat;
+	padding-left: 28px;
+	float: left;
+}
+#posts .postNavigation a.next {
+	background: url(/static/images/arrowright.png) right no-repeat;
+	padding-right: 28px;
+	float: right;
+}
+
+
+#posts #comments article {
+	padding: 10px;
+	border-top: 1px solid #cccccc;
+	margin: 0;
+}
+#posts #comments article:last-child {
+	border-bottom: 1px solid #cccccc;
+}
+#posts #comments article.isAdmin {
+	background-color: #f7f5a9;
+}
+#posts #comments article p em {
+	font-style: italic;
+}
+#posts #comments article blockquote {
+	font-style: italic;
+	border-left: 2px solid #e10007;
+	padding-left: 10px;
+}
+
+#comments article footer {
+	color: #999;
+	font-size: 12px;
+}
+#comments article footer .name {
+	font-weight: bold;
+}
+.commentForm {
+	width: 465px;
+	margin-top: 10px;
+}
+.commentForm ul {
+	list-style: none;
+}
+.commentForm ul li {
+	padding: 5px 0 5px 0;
+}
+.commentForm ul li span {
+	color: #999;
+	font-style: italic;
+	font-size: .8em;
+	margin-left: 10px;
+}
+.commentForm ul li label {
+	margin-left: 10px;
+	color: #999;
+}
+.commentForm ul li input[type=text] {
+	width: 270px;
+}
+.commentForm .stoopidSpammers {
+	display: none;
+}	
+.commentForm ul li:last-child {
+	text-align: right;
+}
+
+/* Edit post styles */
+.editPost input, .editPost textarea {
+	font-size: 14px;
+}
+.editPost input {
+	padding: 8px;
+	width: 400px;
+}
+.editPost textarea {
+	width: 98%;
+	height: 150px;
+}
+.editPost #preview {
+	margin: 10px 0 0 0;
+	border: 2px dashed #999;
+	padding: 10px;
+	border-radius: 5px;
+	max-height: 400px;
+	overflow: auto;
+}
+
+.postHelpers {
+	list-style: none;
+}
+.postHelpers li {
+	float: left;
+	padding: 0;
+}
+.postHelpers li a {
+	display: block;
+	padding: 10px;
+	border: 1px solid #fff;
+	font-weight: bold;
+}
+.postHelpers li a:hover {
+	border: 1px solid #e16900;
+}
+
