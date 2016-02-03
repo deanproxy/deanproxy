@@ -1,4 +1,5 @@
 from django import template
+from django.utils.safestring import mark_safe
 import re
 from blog.models import Post
 
@@ -6,15 +7,15 @@ register = template.Library()
 
 @register.simple_tag
 def css(file):
-	return '<link rel="stylesheet" type="text/css" href="/static/css/%s"/>' % file
+	return mark_safe('<link rel="stylesheet" type="text/css" href="/static/css/%s"/>' % file)
 
 @register.simple_tag
 def js(file):
-	return '<script src="/static/js/%s"></script>' % file
+	return mark_safe('<script src="/static/js/%s"></script>' % file)
 
 @register.simple_tag
 def img(file):
-	return '<img src="/static/images/%s"/>' % file
+	return mark_safe('<img src="/static/images/%s"/>' % file)
 
 @register.simple_tag
 def title(uri):
@@ -30,7 +31,7 @@ def title(uri):
 				location = post.title
 		else:
 			location = loc
-	return location
+	return mark_safe(location)
 
 @register.simple_tag
 def existing_post_actions(uri):
@@ -41,6 +42,6 @@ def existing_post_actions(uri):
 		html = """
 			<li><a href="/blog/posts/edit/{0}">Edit This Post</a></li>
 		""".format(id)
-	return html
+	return mark_safe(html)
 
 

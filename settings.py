@@ -20,26 +20,12 @@ SITE_ROOT = os.path.dirname(os.path.realpath(__file__))
 
 MANAGERS = ADMINS
 
-if os.getenv(RUN_ENV, '') == 'production':
-	DATABASES = {
-		'default': {
-			'ENGINE': 'django.db.backends.mysql',
-			'OPTIONS': {
-				'read_default_file': '/var/www/siteconfigs/deanproxy/mysql.cnf'
-			}
-		}
+DATABASES = {
+	'default': {
+		'ENGINE': 'django.db.backends.sqlite3', 
+		'NAME': '/var/www/deanproxy.db'
 	}
-else:
-	DATABASES = {
-		'default': {
-			'ENGINE': 'django.db.backends.sqlite3', # Add 'postgresql_psycopg2', 'postgresql', 'mysql', 'sqlite3' or 'oracle'.
-			'NAME': 'deanproxy.db',                      # Or path to database file if using sqlite3.
-			'USER': '',                      # Not used with sqlite3.
-			'PASSWORD': '',                  # Not used with sqlite3.
-			'HOST': '',                      # Set to empty string for localhost. Not used with sqlite3.
-			'PORT': '',                      # Set to empty string for default. Not used with sqlite3.
-		}
-	}
+}
 
 # Local time zone for this installation. Choices can be found here:
 # http://en.wikipedia.org/wiki/List_of_tz_zones_by_name

@@ -1,5 +1,6 @@
 import re
 from django import template
+from django.utils.safestring import mark_safe
 from blog.models import Post
 
 register = template.Library()
@@ -19,7 +20,7 @@ def tags_to_string(tags):
 		html += """<a href="/blog/posts/tag/{0}">{0}</a>""".format(tag.name)
 		if i+1 < total_tags:
 			html += ', '
-	return html
+	return mark_safe(html)
 
 
 @register.inclusion_tag('blog/_latest_posts.html')
